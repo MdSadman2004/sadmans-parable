@@ -2,7 +2,7 @@ import { ownedTab, delay } from './cdp.mjs';
 import fs from 'node:fs/promises';
 const results = [];
 const urls = [
-  ['fresh public clone (file://)', "file:///D:/Temp/sp-clone/Sadman's%20Parable.html"],
+  ['fresh public clone (file://)', "file:///D:/Temp/sp2/Sadman's%20Parable.html"],
   ['GitHub Pages', 'https://mdsadman2004.github.io/sadmans-parable/'],
 ];
 for (const [label, url] of urls) {
