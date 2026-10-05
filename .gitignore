@@ -10,3 +10,4 @@ qa/target.json
 qa/server.log
 Sadmans-Parable-Playable.zip
 qa/dl/
+qa/dl*/
