@@ -11,3 +11,5 @@ qa/server.log
 Sadmans-Parable-Playable.zip
 qa/dl/
 qa/dl*/
+qa/profile-payload.json
+qa/profile-readme-new.md
