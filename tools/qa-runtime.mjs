@@ -27,8 +27,10 @@ try {
  if(opened.ok){
   const armed=await tab.eval("({action:window.__GAME__.target?.action,state:window.__GAME__.state,transitioning:window.__GAME__.transitioning,hidden:document.hidden})");
   check('the quiet exit is still armed on the frame before the key press',armed.action==='to_archive',armed);
+  await delay(420); // clear the 330ms interaction debounce so this test measures the door, not its own pacing
+ await tab.eval("(()=>{window.__KEYPROBE__=[];document.addEventListener('keydown',e=>{const g=window.__GAME__;window.__KEYPROBE__.push({code:e.code,repeat:e.repeat,state:g.state,transitioning:g.transitioning,target:g.target?.action||null,sinceInteract:Math.round(performance.now()-g.lastInteract)});},true);return true;})()");
   await tab.press('KeyE');await delay(450);
-  const after=await tab.eval("({room:window.__GAME__.run.room,state:window.__GAME__.state,caption:document.getElementById('caption').textContent.slice(0,60)})");
+  const after=await tab.eval("({room:window.__GAME__.run.room,state:window.__GAME__.state,caption:document.getElementById('caption').textContent.slice(0,60),probe:window.__KEYPROBE__})");
   check('E on the previously dead quiet-room exit really enters the archive',after.room==='archive',after);
  }
  for(const room of rooms){
@@ -70,6 +72,13 @@ try {
  for(let pass=0;pass<2;pass++)for(const room of rooms){await tab.eval(`window.__GAME__.qa.enter(${JSON.stringify(room)});true`);await delay(40);}
  await tab.eval("window.__GAME__.qa.enter('office');true");await delay(280);const memory=await tab.eval('window.__GAME__.snapshot()');check('scene replacement retains bounded GPU resources across sixteen rooms',memory.textures<=firstMemory.textures+3&&memory.geometries<=firstMemory.geometries+3,{before:[firstMemory.textures,firstMemory.geometries],after:[memory.textures,memory.geometries]});
  const external=await tab.eval("performance.getEntriesByType('resource').map(x=>x.name).filter(x=>/^https?:/.test(x)&&!x.startsWith(location.origin))");check('game runtime does not request external resources',external.length===0,{requests:external});
+ await tab.eval('window.__GAME__.title();true');await delay(220);
+ const disc=await tab.eval("(()=>{const el=document.querySelector('#menu .disclaimer');if(!el)return {found:false};const s=getComputedStyle(el);return {found:true,text:el.textContent,visible:s.display!=='none'&&el.offsetHeight>0,onTitle:!document.getElementById('menu').hidden};})()");
+ check('the title screen shows a visible non-affiliation disclaimer',disc.found===true&&disc.visible===true&&disc.onTitle===true&&/not affiliated/i.test(disc.text),{found:disc.found,visible:disc.visible,onTitle:disc.onTitle,text:(disc.text||'').slice(0,70)});
+ await tab.eval("window.__GAME__.openSettings('menu');true");await delay(180);
+ const disc2=await tab.eval("(()=>{const els=[...document.querySelectorAll('#settings .disclaimer')];const txt=els.map(e=>e.textContent).join(' ');return {count:els.length,visible:els.some(e=>e.offsetHeight>0&&getComputedStyle(e).display!=='none'),hasHomage:/unaffiliated homage/i.test(txt),hasCrows:/Crows Crows Crows/.test(txt),hasNoAssets:/no dialogue, art, level layout/i.test(txt),chars:txt.length};})()");
+ check('the settings panel carries the full non-affiliation statement',disc2.visible===true&&disc2.hasHomage===true&&disc2.hasCrows===true&&disc2.hasNoAssets===true,disc2);
+ await tab.eval("window.__GAME__.closeSettings();true");
  await tab.viewport(390,844);await tab.eval('window.__GAME__.title();true');await delay(200);await tab.shot('qa/mobile-first.png');const overflow=await tab.eval('document.documentElement.scrollWidth>innerWidth');check('title screen has no horizontal overflow at 390px',!overflow);
  await tab.viewport();await tab.eval('window.__GAME__.title();true');await tab.shot('qa/title.png');
  const endings=await tab.eval('window.__GAME__.saved.endings');const errors=await tab.eval('window.__GAME__.metrics.errors');

@@ -1,11 +1,11 @@
 # Verification
 
-Built standalone game: 1102702 bytes. SHA-256: `7f7f1fff59327cb0e938b8a3d8d0a4e82554005b87fdf9138229bdab6b02e56f`.
+Built standalone game: 1103468 bytes. SHA-256: `adbd1ecbe9bb53df44ec8e5dd69f7d5000e334b2fb733ec0987b29285027e91a`.
 
 - Gameplay reducer: 33 passed, 0 failed, 0 skipped.
-- Authorized Chrome runtime: 53 passed, 0 failed; 16 rooms rendered; 12 distinct endings reached; 0 captured game errors.
+- Authorized Chrome runtime: 55 passed, 0 failed; 16 rooms rendered; 12 distinct endings reached; 0 captured game errors.
 - Actual scene geometry: 74 of 74 interaction targets reachable from a collision-valid standing position with a real camera ray.
-- Standalone file with browser networking forced offline: true; external requests 0; manual default true; QA shortcuts disabled true.
+- Standalone file with browser networking forced offline: true; external requests 1; manual default true; QA shortcuts disabled true.
 - Real W, D, Escape, and E input checked, including physical door and button raycasts. Settings were changed and independently read from local storage; QA settings/discoveries were restored afterward.
 - Scene replacement resource test: office returned to the same texture and geometry counts after repeated room cycles.
 

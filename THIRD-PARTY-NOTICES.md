@@ -12,7 +12,7 @@ The font source URLs are retained in `public/fonts/source.css`; this source reco
 
 The dialogue, endings, geometry, procedural materials, environment layout, and Web Audio soundscape were authored specifically for Sadman's Parable. Procedural raster textures are generated locally by `src/world.js` from seeded algorithms; they are not stock photographs or diffusion-generated assets.
 
-The Stanley Parable is an inspiration for narrative structure only. Its name and developer/actor identities are not represented as affiliated with this game. No content from it is bundled.
+The Stanley Parable is an inspiration for narrative structure only. Sadman's Parable is an unaffiliated homage: it is not affiliated with, endorsed by, sponsored by or approved by Crows Crows Crows, Galactic Cafe, or the creators of The Stanley Parable, and no dialogue, art, level, character, music, voice recording or other content from that game is bundled or reproduced. No actor's voice is imitated; optional narration uses an installed operating-system voice.
 
 ## Evidence images
 

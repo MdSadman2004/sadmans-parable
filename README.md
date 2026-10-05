@@ -4,6 +4,14 @@
 
 An original, first-person psychological fable made for Sadman. A building approved your life at nine seventeen this morning, before you had done anything. You can obey it, undermine it, or go looking for the person who was standing where you are standing when the file was first opened.
 
+## Not affiliated
+
+Sadman's Parable is an original work and an **unaffiliated homage**. It is not affiliated with, endorsed by, sponsored by, or approved by Crows Crows Crows, Galactic Cafe, or the creators of *The Stanley Parable*.
+
+It contains **no** dialogue, art, level layout, character, music or voice recording from that game. All writing, geometry, textures and audio here were created for this project, and the optional narration uses an installed operating-system voice rather than any actor's performance. The inspiration is structural — an unreliable narrator commenting on player choice — which is a genre convention this game shares with many others.
+
+If you are a rights-holder and would like something changed, please open an issue.
+
 ## Play
 
 Double-click **PLAY.bat** in this folder. It opens the standalone game in a dedicated Chrome app window when Chrome is installed.

@@ -1,12 +1,12 @@
 {
-  "html_sha256": "7f7f1fff59327cb0e938b8a3d8d0a4e82554005b87fdf9138229bdab6b02e56f",
-  "html_bytes": 1102702,
+  "html_sha256": "adbd1ecbe9bb53df44ec8e5dd69f7d5000e334b2fb733ec0987b29285027e91a",
+  "html_bytes": 1103468,
   "files": {
     "src/audio.js": "111b06f8d55f2ecfe76392b226ac4ef7b723c8df248c76621a88c8bcf8b1b763",
     "src/main.js": "02433abde08037f86f7c2eea6a6fa11d5d9ee61086ed2e3c614605a73098f29c",
     "src/rules.js": "62a7aee7aac50f05a200bbbe951d8b99c0bc9d75e6be7e2e7abc934869ec7a7e",
     "src/story.json": "5a1c387aeb0b83f3e46195a19601a2a99723fd395340e53324e0db1a8e8373f7",
-    "src/style.css": "3b762c42bad0921a887d7f3545bc9a1f2fc646b2f97d533d25fc606412e46c98",
+    "src/style.css": "b8c1dd14e38ce6a21eb2664af070db647bccd4fde670df143dae7c28ce34fba3",
     "src/world.js": "102c170e119c1aa9d9ee5520514f5d59bb7fba9dfbd08b852dfaefc24fe8ce7c",
     "tools/build.mjs": "1b3718c3bfd40c2b6ae2b4849d19ddaedda007280c70d12c031f21bee1f66449",
     "tools/cdp.mjs": "179d61604dbcac695cc4037ec85a7d31d2406d17b0f6371d294746d8e90d2d71",
@@ -16,10 +16,11 @@
     "tools/probe-raw.mjs": "6dd5b6d5ace9f3ddc5b7ac4ff957ccf7975d7f0cd1c387ab7d5c6621656ad85a",
     "tools/probe.mjs": "e23f20df43db03ca4932d7c751b82ea3ec94d32eab9c61edfa3ec465ebdf45a1",
     "tools/qa-offline.mjs": "33e7b6e55bbcb2ec3c3e545443ea43d7284011f83c2acd3102a62dd741e29e31",
-    "tools/qa-runtime.mjs": "8835bc1b629721f876df3017d411f955adfc747ccd3f80bb992b88c5ba4182a0",
+    "tools/qa-runtime.mjs": "b40fac038cc10945d56fbd82037964b699b1ca3b6a364414658b1434ea27ea6f",
     "tools/reachability.mjs": "7f0211c75e6fb2ce700c66ab8cddeb9564c54b1b3e32f601715478efe3431e49",
     "tools/serve.mjs": "75e95ef7cfd0d3e90d563585789b82e74824fa6d561acc0c15a23b04d3c56bf5",
     "tools/test-report.mjs": "261c01f826f158c514b45e5ca7a9525f8276b0dc712a6b19775afebba1219ba8",
+    "tools/verify-published.mjs": "44aa9309c0424f8e66015e95081f7f84165a56279a39a37f6bf65300f2c9fc3b",
     "tests/rules.test.mjs": "6363d3ce7e7b155e3fcf3c54435ae590cac87fd721ae752363863b693d10eb7c"
   }
 }

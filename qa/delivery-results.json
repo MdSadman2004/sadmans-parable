@@ -4,9 +4,9 @@
   "readme_exists": true,
   "zip_exists": true,
   "hashes_match": true,
-  "html_bytes": 1102702,
-  "html_sha256": "7f7f1fff59327cb0e938b8a3d8d0a4e82554005b87fdf9138229bdab6b02e56f",
-  "zip_bytes": 426535,
-  "zip_sha256": "bc4265ad77c0fa379a90a085dd698c84acc470ac90eb7c85d4db6efbd536f8bf",
-  "tests_total": 160
+  "html_bytes": 1103468,
+  "html_sha256": "adbd1ecbe9bb53df44ec8e5dd69f7d5000e334b2fb733ec0987b29285027e91a",
+  "zip_bytes": 427420,
+  "zip_sha256": "287d57d03f674cf2d65861a5c617433b7c67d69a0348970cc92dcca5798b6dee",
+  "tests_total": 162
 }

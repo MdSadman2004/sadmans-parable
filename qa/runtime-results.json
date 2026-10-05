@@ -10,9 +10,9 @@
           4.6
         ],
         "after": [
-          -0.30276979433566814,
-          1.7493422352770738,
-          1.5824011177530641
+          -0.3028047360314945,
+          1.75500305987258,
+          1.5820528662952191
         ]
       }
     },
@@ -21,14 +21,14 @@
       "passed": true,
       "detail": {
         "before": [
-          -0.30276979433566814,
-          1.7493422352770738,
-          1.5824011177530641
+          -0.3028047360314945,
+          1.75500305987258,
+          1.5820528662952191
         ],
         "after": [
-          1.4983867456506144,
-          1.693987261505414,
-          1.4016826669389748
+          1.4962622952077045,
+          1.7398739696020067,
+          1.4015440656560887
         ]
       }
     },
@@ -110,7 +110,17 @@
       "detail": {
         "room": "archive",
         "state": "playing",
-        "caption": "Archive of lives not lived. Every shelf holds the story of a"
+        "caption": "Archive of lives not lived. Every shelf holds the story of a",
+        "probe": [
+          {
+            "code": "KeyE",
+            "repeat": false,
+            "state": "playing",
+            "transitioning": false,
+            "target": "to_archive",
+            "sinceInteract": 500
+          }
+        ]
       }
     },
     {
@@ -120,7 +130,7 @@
         "draws": 119,
         "triangles": 3192,
         "meshes": 75,
-        "fps": 39
+        "fps": 34
       }
     },
     {
@@ -130,7 +140,7 @@
         "draws": 91,
         "triangles": 1732,
         "meshes": 95,
-        "fps": 37
+        "fps": 32
       }
     },
     {
@@ -140,7 +150,7 @@
         "draws": 334,
         "triangles": 4876,
         "meshes": 41,
-        "fps": 36
+        "fps": 37
       }
     },
     {
@@ -150,7 +160,7 @@
         "draws": 49,
         "triangles": 1142,
         "meshes": 50,
-        "fps": 42
+        "fps": 41
       }
     },
     {
@@ -160,7 +170,7 @@
         "draws": 66,
         "triangles": 736,
         "meshes": 51,
-        "fps": 43
+        "fps": 42
       }
     },
     {
@@ -170,7 +180,7 @@
         "draws": 193,
         "triangles": 28766,
         "meshes": 207,
-        "fps": 39
+        "fps": 40
       }
     },
     {
@@ -190,7 +200,7 @@
         "draws": 98,
         "triangles": 12394,
         "meshes": 88,
-        "fps": 42
+        "fps": 43
       }
     },
     {
@@ -200,7 +210,7 @@
         "draws": 143,
         "triangles": 41804,
         "meshes": 110,
-        "fps": 44
+        "fps": 43
       }
     },
     {
@@ -210,7 +220,7 @@
         "draws": 38,
         "triangles": 1998,
         "meshes": 40,
-        "fps": 47
+        "fps": 46
       }
     },
     {
@@ -220,7 +230,7 @@
         "draws": 106,
         "triangles": 1648,
         "meshes": 68,
-        "fps": 50
+        "fps": 49
       }
     },
     {
@@ -230,7 +240,7 @@
         "draws": 63,
         "triangles": 1410,
         "meshes": 64,
-        "fps": 53
+        "fps": 47
       }
     },
     {
@@ -240,7 +250,7 @@
         "draws": 46,
         "triangles": 762,
         "meshes": 42,
-        "fps": 50
+        "fps": 47
       }
     },
     {
@@ -260,7 +270,7 @@
         "draws": 38,
         "triangles": 770,
         "meshes": 36,
-        "fps": 46
+        "fps": 45
       }
     },
     {
@@ -365,7 +375,7 @@
       "name": "stillness ending is reachable without moving the player",
       "passed": true,
       "detail": {
-        "quietTime": 18.01660000000012
+        "quietTime": 18.01670000000012
       }
     },
     {
@@ -436,12 +446,34 @@
       }
     },
     {
+      "name": "the title screen shows a visible non-affiliation disclaimer",
+      "passed": true,
+      "detail": {
+        "found": true,
+        "visible": true,
+        "onTitle": true,
+        "text": "Unaffiliated homage to The Stanley Parable. Not affiliated with or end"
+      }
+    },
+    {
+      "name": "the settings panel carries the full non-affiliation statement",
+      "passed": true,
+      "detail": {
+        "count": 1,
+        "visible": true,
+        "hasHomage": true,
+        "hasCrows": true,
+        "hasNoAssets": true,
+        "chars": 486
+      }
+    },
+    {
       "name": "title screen has no horizontal overflow at 390px",
       "passed": true,
       "detail": {}
     }
   ],
-  "passed": 53,
+  "passed": 55,
   "failed": 0,
   "room_count": 16,
   "ending_count": 12,
@@ -483,7 +515,7 @@
             "archive": 1
           },
           "seen": {},
-          "elapsed": 2.766599999999999,
+          "elapsed": 2.7830999999999984,
           "traces": {},
           "predecessor": false,
           "alignment": null,
@@ -498,15 +530,15 @@
         "alignment": null,
         "predecessor": false,
         "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
-        "frames": 164,
-        "fps": 39,
+        "frames": 165,
+        "fps": 34,
         "draws": 119,
         "triangles": 3192,
         "textures": 10,
         "geometries": 17,
         "mouseCaptured": false,
         "metrics": {
-          "frames": 164,
+          "frames": 165,
           "interactions": 3,
           "roomChanges": 8,
           "errors": [],
@@ -551,7 +583,7 @@
             "archive": 1
           },
           "seen": {},
-          "elapsed": 3.299799999999999,
+          "elapsed": 3.3664999999999976,
           "traces": {},
           "predecessor": false,
           "alignment": null,
@@ -566,15 +598,15 @@
         "alignment": null,
         "predecessor": false,
         "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
-        "frames": 190,
-        "fps": 37,
+        "frames": 194,
+        "fps": 32,
         "draws": 91,
         "triangles": 1732,
         "textures": 13,
         "geometries": 27,
         "mouseCaptured": false,
         "metrics": {
-          "frames": 190,
+          "frames": 194,
           "interactions": 3,
           "roomChanges": 9,
           "errors": [],
@@ -620,7 +652,7 @@
             "approval": 1
           },
           "seen": {},
-          "elapsed": 3.7331999999999974,
+          "elapsed": 3.799699999999997,
           "traces": {},
           "predecessor": false,
           "alignment": null,
@@ -635,15 +667,15 @@
         "alignment": null,
         "predecessor": false,
         "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
-        "frames": 214,
-        "fps": 36,
+        "frames": 218,
+        "fps": 37,
         "draws": 334,
         "triangles": 4876,
         "textures": 23,
         "geometries": 38,
         "mouseCaptured": false,
         "metrics": {
-          "frames": 214,
+          "frames": 218,
           "interactions": 3,
           "roomChanges": 10,
           "errors": [],
@@ -689,7 +721,7 @@
             "approval": 1
           },
           "seen": {},
-          "elapsed": 4.316899999999997,
+          "elapsed": 4.3664000000000005,
           "traces": {},
           "predecessor": false,
           "alignment": null,
@@ -704,15 +736,15 @@
         "alignment": null,
         "predecessor": false,
         "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
-        "frames": 244,
-        "fps": 42,
+        "frames": 248,
+        "fps": 41,
         "draws": 49,
         "triangles": 1142,
         "textures": 6,
         "geometries": 17,
         "mouseCaptured": false,
         "metrics": {
-          "frames": 244,
+          "frames": 248,
           "interactions": 3,
           "roomChanges": 11,
           "errors": [],
@@ -759,7 +791,7 @@
             "loop": 1
           },
           "seen": {},
-          "elapsed": 4.783200000000001,
+          "elapsed": 4.833000000000005,
           "traces": {},
           "predecessor": false,
           "alignment": null,
@@ -774,15 +806,15 @@
         "alignment": null,
         "predecessor": false,
         "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
-        "frames": 270,
-        "fps": 43,
+        "frames": 274,
+        "fps": 42,
         "draws": 66,
         "triangles": 736,
         "textures": 19,
         "geometries": 21,
         "mouseCaptured": false,
         "metrics": {
-          "frames": 270,
+          "frames": 274,
           "interactions": 3,
           "roomChanges": 12,
           "errors": [],
@@ -829,7 +861,7 @@
             "loop": 1
           },
           "seen": {},
-          "elapsed": 5.2832000000000034,
+          "elapsed": 5.233000000000006,
           "traces": {},
           "predecessor": false,
           "alignment": null,
@@ -844,15 +876,15 @@
         "alignment": null,
         "predecessor": false,
         "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
-        "frames": 296,
-        "fps": 39,
+        "frames": 294,
+        "fps": 40,
         "draws": 193,
         "triangles": 28766,
         "textures": 9,
         "geometries": 47,
         "mouseCaptured": false,
         "metrics": {
-          "frames": 296,
+          "frames": 294,
           "interactions": 3,
           "roomChanges": 13,
           "errors": [],
@@ -900,7 +932,7 @@
             "gallery": 1
           },
           "seen": {},
-          "elapsed": 5.633100000000007,
+          "elapsed": 5.533000000000008,
           "traces": {},
           "predecessor": false,
           "alignment": null,
@@ -915,7 +947,7 @@
         "alignment": null,
         "predecessor": false,
         "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
-        "frames": 317,
+        "frames": 312,
         "fps": 47,
         "draws": 48,
         "triangles": 1570,
@@ -923,7 +955,7 @@
         "geometries": 29,
         "mouseCaptured": false,
         "metrics": {
-          "frames": 317,
+          "frames": 312,
           "interactions": 3,
           "roomChanges": 14,
           "errors": [],
@@ -972,7 +1004,7 @@
             "observatory": 1
           },
           "seen": {},
-          "elapsed": 6.216400000000012,
+          "elapsed": 6.083000000000009,
           "traces": {},
           "predecessor": false,
           "alignment": null,
@@ -987,15 +1019,15 @@
         "alignment": null,
         "predecessor": false,
         "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
-        "frames": 348,
-        "fps": 42,
+        "frames": 341,
+        "fps": 43,
         "draws": 98,
         "triangles": 12394,
         "textures": 10,
         "geometries": 29,
         "mouseCaptured": false,
         "metrics": {
-          "frames": 348,
+          "frames": 341,
           "interactions": 3,
           "roomChanges": 15,
           "errors": [],
@@ -1045,7 +1077,7 @@
             "garden": 1
           },
           "seen": {},
-          "elapsed": 6.616500000000014,
+          "elapsed": 6.49960000000001,
           "traces": {},
           "predecessor": false,
           "alignment": null,
@@ -1060,15 +1092,15 @@
         "alignment": null,
         "predecessor": false,
         "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
-        "frames": 370,
-        "fps": 44,
+        "frames": 363,
+        "fps": 43,
         "draws": 143,
         "triangles": 41804,
         "textures": 6,
         "geometries": 82,
         "mouseCaptured": false,
         "metrics": {
-          "frames": 370,
+          "frames": 363,
           "interactions": 3,
           "roomChanges": 16,
           "errors": [],
@@ -1118,7 +1150,7 @@
             "garden": 1
           },
           "seen": {},
-          "elapsed": 7.100000000000015,
+          "elapsed": 6.899700000000014,
           "traces": {},
           "predecessor": false,
           "alignment": null,
@@ -1133,15 +1165,15 @@
         "alignment": null,
         "predecessor": false,
         "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
-        "frames": 397,
-        "fps": 47,
+        "frames": 385,
+        "fps": 46,
         "draws": 38,
         "triangles": 1998,
         "textures": 4,
         "geometries": 8,
         "mouseCaptured": false,
         "metrics": {
-          "frames": 397,
+          "frames": 385,
           "interactions": 3,
           "roomChanges": 17,
           "errors": [],
@@ -1191,7 +1223,7 @@
             "garden": 1
           },
           "seen": {},
-          "elapsed": 7.6666000000000185,
+          "elapsed": 7.383000000000016,
           "traces": {},
           "predecessor": false,
           "alignment": null,
@@ -1206,15 +1238,15 @@
         "alignment": null,
         "predecessor": false,
         "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
-        "frames": 427,
-        "fps": 50,
+        "frames": 411,
+        "fps": 49,
         "draws": 106,
         "triangles": 1648,
         "textures": 8,
         "geometries": 16,
         "mouseCaptured": false,
         "metrics": {
-          "frames": 427,
+          "frames": 411,
           "interactions": 3,
           "roomChanges": 18,
           "errors": [],
@@ -1264,7 +1296,7 @@
             "garden": 1
           },
           "seen": {},
-          "elapsed": 8.250000000000016,
+          "elapsed": 7.86630000000002,
           "traces": {},
           "predecessor": false,
           "alignment": null,
@@ -1279,15 +1311,15 @@
         "alignment": null,
         "predecessor": false,
         "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
-        "frames": 460,
-        "fps": 53,
+        "frames": 438,
+        "fps": 47,
         "draws": 63,
         "triangles": 1410,
         "textures": 9,
         "geometries": 15,
         "mouseCaptured": false,
         "metrics": {
-          "frames": 460,
+          "frames": 438,
           "interactions": 3,
           "roomChanges": 19,
           "errors": [],
@@ -1338,7 +1370,7 @@
             "stairwell": 1
           },
           "seen": {},
-          "elapsed": 8.550000000000013,
+          "elapsed": 8.21620000000002,
           "traces": {},
           "predecessor": false,
           "alignment": null,
@@ -1353,15 +1385,15 @@
         "alignment": null,
         "predecessor": false,
         "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
-        "frames": 476,
-        "fps": 50,
+        "frames": 456,
+        "fps": 47,
         "draws": 46,
         "triangles": 762,
         "textures": 8,
         "geometries": 15,
         "mouseCaptured": false,
         "metrics": {
-          "frames": 476,
+          "frames": 456,
           "interactions": 3,
           "roomChanges": 20,
           "errors": [],
@@ -1413,7 +1445,7 @@
             "workshop": 1
           },
           "seen": {},
-          "elapsed": 9.066700000000006,
+          "elapsed": 8.682900000000014,
           "traces": {},
           "predecessor": false,
           "alignment": null,
@@ -1428,7 +1460,7 @@
         "alignment": null,
         "predecessor": false,
         "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
-        "frames": 503,
+        "frames": 482,
         "fps": 47,
         "draws": 145,
         "triangles": 2136,
@@ -1436,7 +1468,7 @@
         "geometries": 19,
         "mouseCaptured": false,
         "metrics": {
-          "frames": 503,
+          "frames": 482,
           "interactions": 3,
           "roomChanges": 21,
           "errors": [],
@@ -1489,7 +1521,7 @@
             "flood": 1
           },
           "seen": {},
-          "elapsed": 9.416600000000003,
+          "elapsed": 9.033000000000012,
           "traces": {},
           "predecessor": false,
           "alignment": null,
@@ -1504,15 +1536,15 @@
         "alignment": null,
         "predecessor": false,
         "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
-        "frames": 522,
-        "fps": 46,
+        "frames": 501,
+        "fps": 45,
         "draws": 38,
         "triangles": 770,
         "textures": 8,
         "geometries": 15,
         "mouseCaptured": false,
         "metrics": {
-          "frames": 522,
+          "frames": 501,
           "interactions": 3,
           "roomChanges": 22,
           "errors": [],
@@ -1566,7 +1598,7 @@
             "rooftop": 1
           },
           "seen": {},
-          "elapsed": 9.9667,
+          "elapsed": 9.532900000000009,
           "traces": {},
           "predecessor": false,
           "alignment": null,
@@ -1581,7 +1613,7 @@
         "alignment": null,
         "predecessor": false,
         "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
-        "frames": 553,
+        "frames": 529,
         "fps": 47,
         "draws": 75,
         "triangles": 1982,
@@ -1589,7 +1621,7 @@
         "geometries": 37,
         "mouseCaptured": false,
         "metrics": {
-          "frames": 553,
+          "frames": 529,
           "interactions": 3,
           "roomChanges": 23,
           "errors": [],
