@@ -1,0 +1,29 @@
+{
+  "kind": "source-guide",
+  "source_head": "93db446847c4ad330e04f8c67123cc7593d0b463",
+  "source_tree": "e587c6de9a913007a3d4cd9f358591c2052c1267",
+  "source_repository": "https://github.com/MdSadman2004/sadmans-parable",
+  "nodes": [
+    {
+      "label": "Narrative",
+      "path": "src/story.json",
+      "detail": "Authored dialogue, rooms and endings"
+    },
+    {
+      "label": "Choice system",
+      "path": "src/rules.js",
+      "detail": "Gameplay-state transitions and gates"
+    },
+    {
+      "label": "Authored world",
+      "path": "src/world.js",
+      "detail": "Procedural spaces and interaction targets"
+    }
+  ],
+  "caption": "Source guide drawn from repository files; not a runtime screenshot or fresh benchmark.",
+  "generated_by": "render_guides.py",
+  "image_dimensions": [
+    1600,
+    960
+  ]
+}

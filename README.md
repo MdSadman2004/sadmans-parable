@@ -1,5 +1,13 @@
 # Sadman's Parable
 
+An offline first-person psychological fable with an unreliable narrator and branching endings.
+
+![Sadman's Parable — a garden beyond the building](screenshots/garden.jpg)
+
+*Existing WebGL gameplay capture from this repository; not a fresh gameplay test.*
+
+**[Play in browser](https://mdsadman2004.github.io/sadmans-parable/)** · **[Download](https://github.com/MdSadman2004/sadmans-parable/releases/latest)** · **[Verification record](VERIFICATION.md)**
+
 **Your story is ready. Unfortunately, you weren't consulted.**
 
 An original, first-person psychological fable made for Sadman. A building approved your life at nine seventeen this morning, before you had done anything. You can obey it, undermine it, or go looking for the person who was standing where you are standing when the file was first opened.
@@ -57,15 +65,15 @@ Real WebGL frames from the local build, captured through the browser's own debug
 
 | | |
 | :--: | :--: |
-| ![](screenshots/title.jpg) | ![](screenshots/office.jpg) |
+| ![Title scene](screenshots/title.jpg) | ![Office scene](screenshots/office.jpg) |
 | Title — your story is ready | Your room, where the file begins |
-| ![](screenshots/records.jpg) | ![](screenshots/mirror.jpg) |
+| ![Records scene](screenshots/records.jpg) | ![Mirror scene](screenshots/mirror.jpg) |
 | Records of Nearly | A room of you |
-| ![](screenshots/workshop.jpg) | ![](screenshots/flood.jpg) |
+| ![Workshop scene](screenshots/workshop.jpg) | ![Flood scene](screenshots/flood.jpg) |
 | Where the Building is mended | The floor that remembers |
-| ![](screenshots/observatory.jpg) | ![](screenshots/garden.jpg) |
+| ![Observatory scene](screenshots/observatory.jpg) | ![Garden scene](screenshots/garden.jpg) |
 | The unwritten sky | Somewhere unmeasured |
-| ![](screenshots/rooftop.jpg) | ![](screenshots/archive.jpg) |
+| ![Rooftop scene](screenshots/rooftop.jpg) | ![Archive scene](screenshots/archive.jpg) |
 | Above the Building | Archive of lives not lived |
 
 ## Technical requirements
@@ -82,7 +90,7 @@ This is automated coverage, not a claim of a complete human playthrough or long-
 
 ## Source and build
 
-The complete source project is kept in this E: folder. `src/main.js` owns the runtime, `src/world.js` the authored world, `src/rules.js` the testable choice system, `src/story.json` the narrative (98 authored lines, 12 endings), and `src/audio.js` the local soundscape.
+The complete source project is included in this repository. `src/main.js` owns the runtime, `src/world.js` the authored world, `src/rules.js` the testable choice system, `src/story.json` the narrative (98 authored lines, 12 endings), and `src/audio.js` the local soundscape.
 
 With Node installed: `npm install`, `npm test`, `npm run build`. Build creates the named standalone HTML and `dist/index.html`. The root `index.html` is a source template, not the playable file.
 
@@ -93,3 +101,19 @@ QA shortcuts exist **only** when `?qa=1` is explicitly supplied to a test URL. N
 Created for Sadman. Inspired by The Stanley Parable's unreliable narration and player/narrator tension; no copied dialogue, levels, characters, recordings, or game assets.
 
 Three.js (MIT), Libre Caslon Display (SIL OFL), and Manrope (SIL OFL). License texts are in `licenses/`; provenance is in `THIRD-PARTY-NOTICES.md`.
+
+## Source guide
+
+![Narrative, choices and world source files](docs/portfolio/overview.png)
+
+*Source guide drawn from repository files; not a runtime screenshot or a fresh benchmark.*
+
+| Component | File | Purpose |
+| :-- | :-- | :-- |
+| Narrative | [src/story.json](src/story.json) | Authored dialogue, rooms and endings |
+| Choice system | [src/rules.js](src/rules.js) | Gameplay-state transitions and gates |
+| Authored world | [src/world.js](src/world.js) | Procedural spaces and interaction targets |
+
+## Scope & limitations
+
+Desktop keyboard and mouse are the intended controls; readable mobile menus do not make it a touch-controlled game. Historical automated coverage is not a complete human playthrough. Optional narration depends on an installed local voice. Browser storage may be unavailable or isolated by path. This refresh does not independently reproduce all gameplay tests.
