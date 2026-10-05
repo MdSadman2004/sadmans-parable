@@ -1,0 +1,12 @@
+{
+  "html_exists": true,
+  "launcher_exists": true,
+  "readme_exists": true,
+  "zip_exists": true,
+  "hashes_match": true,
+  "html_bytes": 1102702,
+  "html_sha256": "7f7f1fff59327cb0e938b8a3d8d0a4e82554005b87fdf9138229bdab6b02e56f",
+  "zip_bytes": 420853,
+  "zip_sha256": "b0b22e41bc85a40b9a64d45933daaea7dffcc22f9ced09b78a56a63586841df0",
+  "tests_total": 160
+}

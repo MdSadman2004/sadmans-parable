@@ -1,0 +1,1283 @@
+{
+  "checks": [
+    {
+      "room": "office",
+      "action": "office_desk",
+      "label": "Read your finished story",
+      "reachable": true,
+      "vantage": {
+        "x": -3,
+        "z": -0.4829999999999999,
+        "yaw": 0,
+        "pitch": -0.20805613679102575
+      },
+      "targetPosition": [
+        -3,
+        1.32,
+        -2.283
+      ]
+    },
+    {
+      "room": "office",
+      "action": "to_hub",
+      "label": "BEGIN AGAIN",
+      "reachable": true,
+      "vantage": {
+        "x": 2.8,
+        "z": -4.8500000000000005,
+        "yaw": 0,
+        "pitch": -0.03886930217792178
+      },
+      "targetPosition": [
+        2.8,
+        1.63,
+        -6.65
+      ]
+    },
+    {
+      "room": "office",
+      "action": "office_plant",
+      "label": "Check whether the plant is real",
+      "reachable": true,
+      "vantage": {
+        "x": 4.724854219589734,
+        "z": -6.442810362097522,
+        "yaw": -3.141592653589793,
+        "pitch": -0.023051471731351244
+      },
+      "targetPosition": [
+        4.724854219589734,
+        1.6585,
+        -4.6428103620975225
+      ]
+    },
+    {
+      "room": "office",
+      "action": "office_clock",
+      "label": "Ask the clock what it means",
+      "reachable": true,
+      "vantage": {
+        "x": -1.337016841479684,
+        "z": -6.049169821742838,
+        "yaw": 1.1780972450961722,
+        "pitch": 0.625485040239229
+      },
+      "targetPosition": [
+        -3,
+        3,
+        -6.738
+      ]
+    },
+    {
+      "room": "office",
+      "action": "office_page",
+      "label": "Read the page that predates you",
+      "reachable": true,
+      "vantage": {
+        "x": -0.8272077938642146,
+        "z": -0.5772077938642144,
+        "yaw": 0.7853981633974482,
+        "pitch": -0.37089128881266237
+      },
+      "targetPosition": [
+        -2.1,
+        1,
+        -1.85
+      ]
+    },
+    {
+      "room": "hub",
+      "action": "to_approval",
+      "label": "ON TIME",
+      "reachable": true,
+      "vantage": {
+        "x": -5,
+        "z": -9.85,
+        "yaw": 0,
+        "pitch": -0.03886930217792177
+      },
+      "targetPosition": [
+        -5,
+        1.63,
+        -11.65
+      ]
+    },
+    {
+      "room": "hub",
+      "action": "to_loop",
+      "label": "TOO LATE",
+      "reachable": true,
+      "vantage": {
+        "x": 5,
+        "z": -9.85,
+        "yaw": 0,
+        "pitch": -0.03886930217792177
+      },
+      "targetPosition": [
+        5,
+        1.63,
+        -11.65
+      ]
+    },
+    {
+      "room": "hub",
+      "action": "to_office",
+      "label": "MY ROOM",
+      "reachable": true,
+      "vantage": {
+        "x": 1.662983158520316,
+        "z": 10.961169821742839,
+        "yaw": 1.9634954084936207,
+        "pitch": -0.03886930217792179
+      },
+      "targetPosition": [
+        0,
+        1.63,
+        11.65
+      ]
+    },
+    {
+      "room": "hub",
+      "action": "to_button",
+      "label": "CUSTOMER SATISFACTION",
+      "reachable": true,
+      "vantage": {
+        "x": 8.961169821742839,
+        "z": -1.6629831585203163,
+        "yaw": -2.7488935718910694,
+        "pitch": -0.03886930217792178
+      },
+      "targetPosition": [
+        9.65,
+        1.63,
+        0
+      ]
+    },
+    {
+      "room": "hub",
+      "action": "to_stairwell",
+      "label": "THE STAIRS",
+      "reachable": true,
+      "vantage": {
+        "x": -8.961169821742839,
+        "z": 1.662983158520316,
+        "yaw": 0.39269908169872403,
+        "pitch": -0.03886930217792179
+      },
+      "targetPosition": [
+        -9.65,
+        1.63,
+        0
+      ]
+    },
+    {
+      "room": "hub",
+      "action": "hub_notice",
+      "label": "Read the notice board",
+      "reachable": true,
+      "vantage": {
+        "x": -9.131169821742839,
+        "z": -3.337016841479684,
+        "yaw": 0.39269908169872403,
+        "pitch": 0.2709468503384207
+      },
+      "targetPosition": [
+        -9.82,
+        2.2,
+        -5
+      ]
+    },
+    {
+      "room": "approval",
+      "action": "approve",
+      "label": "APPROVED EXIT",
+      "reachable": true,
+      "vantage": {
+        "x": 0,
+        "z": -11.85,
+        "yaw": 0,
+        "pitch": -0.03886930217792177
+      },
+      "targetPosition": [
+        0,
+        1.63,
+        -13.65
+      ]
+    },
+    {
+      "room": "approval",
+      "action": "shred",
+      "label": "SHRED THE FORM",
+      "reachable": true,
+      "vantage": {
+        "x": -6.961169821742839,
+        "z": -2.337016841479684,
+        "yaw": 0.39269908169872403,
+        "pitch": -0.03886930217792179
+      },
+      "targetPosition": [
+        -7.65,
+        1.63,
+        -4
+      ]
+    },
+    {
+      "room": "approval",
+      "action": "to_hub",
+      "label": "WITHDRAW REQUEST",
+      "reachable": true,
+      "vantage": {
+        "x": 1.662983158520316,
+        "z": 12.961169821742839,
+        "yaw": 1.9634954084936207,
+        "pitch": -0.03886930217792179
+      },
+      "targetPosition": [
+        0,
+        1.63,
+        13.65
+      ]
+    },
+    {
+      "room": "approval",
+      "action": "stamp",
+      "label": "Stamp your request",
+      "reachable": true,
+      "vantage": {
+        "x": 0,
+        "z": -6.2,
+        "yaw": 0,
+        "pitch": 0
+      },
+      "targetPosition": [
+        0,
+        1.7,
+        -8
+      ]
+    },
+    {
+      "room": "button",
+      "action": "button",
+      "label": "Improve the experience",
+      "reachable": true,
+      "vantage": {
+        "x": 0,
+        "z": -0.19999999999999996,
+        "yaw": 0,
+        "pitch": -0.28123220191829523
+      },
+      "targetPosition": [
+        0,
+        1.18,
+        -2
+      ]
+    },
+    {
+      "room": "button",
+      "action": "button_leave",
+      "label": "I AM DONE",
+      "reachable": true,
+      "vantage": {
+        "x": 4.3,
+        "z": -6.8500000000000005,
+        "yaw": 0,
+        "pitch": -0.03886930217792178
+      },
+      "targetPosition": [
+        4.3,
+        1.63,
+        -8.65
+      ]
+    },
+    {
+      "room": "button",
+      "action": "loophole",
+      "label": "MAINTENANCE",
+      "reachable": true,
+      "vantage": {
+        "x": -2.6370168414796837,
+        "z": 7.961169821742839,
+        "yaw": 1.9634954084936207,
+        "pitch": -0.03886930217792179
+      },
+      "targetPosition": [
+        -4.3,
+        1.63,
+        8.65
+      ]
+    },
+    {
+      "room": "loop",
+      "action": "loop",
+      "label": "THE END",
+      "reachable": true,
+      "vantage": {
+        "x": 0,
+        "z": -17.849999999999998,
+        "yaw": 0,
+        "pitch": -0.03886930217792177
+      },
+      "targetPosition": [
+        0,
+        1.63,
+        -19.65
+      ]
+    },
+    {
+      "room": "loop",
+      "action": "reject",
+      "label": "DISAPPOINT ME",
+      "reachable": true,
+      "vantage": {
+        "x": -1.9711698217428384,
+        "z": -10.337016841479684,
+        "yaw": 0.39269908169872436,
+        "pitch": -0.03886930217792179
+      },
+      "targetPosition": [
+        -2.66,
+        1.63,
+        -12
+      ]
+    },
+    {
+      "room": "loop",
+      "action": "to_hub",
+      "label": "RECONSIDER",
+      "reachable": true,
+      "vantage": {
+        "x": 1.662983158520316,
+        "z": 18.961169821742835,
+        "yaw": 1.9634954084936216,
+        "pitch": -0.03886930217792177
+      },
+      "targetPosition": [
+        0,
+        1.63,
+        19.65
+      ]
+    },
+    {
+      "room": "archive",
+      "action": "to_observatory",
+      "label": "THE UNWRITTEN SKY",
+      "reachable": true,
+      "vantage": {
+        "x": 6,
+        "z": -13.7,
+        "yaw": 0,
+        "pitch": -0.03886930217792177
+      },
+      "targetPosition": [
+        6,
+        1.63,
+        -15.5
+      ]
+    },
+    {
+      "room": "archive",
+      "action": "to_quiet",
+      "label": "A ROOM WITHOUT A TASK",
+      "reachable": true,
+      "vantage": {
+        "x": -6,
+        "z": -13.7,
+        "yaw": 0,
+        "pitch": -0.03886930217792177
+      },
+      "targetPosition": [
+        -6,
+        1.63,
+        -15.5
+      ]
+    },
+    {
+      "room": "archive",
+      "action": "to_gallery",
+      "label": "THE MUSEUM OF YOU",
+      "reachable": true,
+      "vantage": {
+        "x": 11.86116982174284,
+        "z": 4.3370168414796835,
+        "yaw": -2.7488935718910694,
+        "pitch": -0.03886930217792178
+      },
+      "targetPosition": [
+        12.55,
+        1.63,
+        6
+      ]
+    },
+    {
+      "room": "archive",
+      "action": "to_records",
+      "label": "RECORDS OF NEARLY",
+      "reachable": true,
+      "vantage": {
+        "x": -11.86116982174284,
+        "z": 7.662983158520316,
+        "yaw": 0.39269908169872414,
+        "pitch": -0.03886930217792179
+      },
+      "targetPosition": [
+        -12.55,
+        1.63,
+        6
+      ]
+    },
+    {
+      "room": "archive",
+      "action": "to_hub",
+      "label": "BACK TO ALMOST",
+      "reachable": true,
+      "vantage": {
+        "x": 1.662983158520316,
+        "z": 14.811169821742839,
+        "yaw": 1.9634954084936207,
+        "pitch": -0.03886930217792179
+      },
+      "targetPosition": [
+        0,
+        1.63,
+        15.5
+      ]
+    },
+    {
+      "room": "archive",
+      "action": "book",
+      "label": "Borrow an unlived memory",
+      "reachable": true,
+      "vantage": {
+        "x": 0,
+        "z": 0.44999999999999996,
+        "yaw": 0,
+        "pitch": -0.3016190462662397
+      },
+      "targetPosition": [
+        0,
+        1.14,
+        -1.35
+      ]
+    },
+    {
+      "room": "archive",
+      "action": "archive_note",
+      "label": "Read the return policy",
+      "reachable": true,
+      "vantage": {
+        "x": 3,
+        "z": 10.100000000000001,
+        "yaw": 0,
+        "pitch": -0.2709468503384204
+      },
+      "targetPosition": [
+        3,
+        1.2,
+        8.3
+      ]
+    },
+    {
+      "room": "gallery",
+      "action": "to_archive",
+      "label": "THINGS NOT YET DECIDED",
+      "reachable": true,
+      "vantage": {
+        "x": 6,
+        "z": -9.85,
+        "yaw": 0,
+        "pitch": -0.03886930217792177
+      },
+      "targetPosition": [
+        6,
+        1.63,
+        -11.65
+      ]
+    },
+    {
+      "room": "gallery",
+      "action": "to_hub",
+      "label": "THE LOBBY",
+      "reachable": true,
+      "vantage": {
+        "x": 1.662983158520316,
+        "z": 10.961169821742839,
+        "yaw": 1.9634954084936207,
+        "pitch": -0.03886930217792179
+      },
+      "targetPosition": [
+        0,
+        1.63,
+        11.65
+      ]
+    },
+    {
+      "room": "gallery",
+      "action": "gallery_case",
+      "label": "Inspect the space reserved for you",
+      "reachable": true,
+      "vantage": {
+        "x": 0,
+        "z": -0.19999999999999996,
+        "yaw": 0,
+        "pitch": -0.03886930217792178
+      },
+      "targetPosition": [
+        0,
+        1.63,
+        -2
+      ]
+    },
+    {
+      "room": "gallery",
+      "action": "petty",
+      "label": "Press the button you have been told not to press",
+      "reachable": true,
+      "vantage": {
+        "x": -6,
+        "z": -6.2,
+        "yaw": 0,
+        "pitch": -0.18668933081424927
+      },
+      "targetPosition": [
+        -6,
+        1.36,
+        -8
+      ]
+    },
+    {
+      "room": "observatory",
+      "action": "to_garden",
+      "label": "SOMETHING UNMEASURED",
+      "reachable": true,
+      "vantage": {
+        "x": 0,
+        "z": -18.5,
+        "yaw": 0,
+        "pitch": -0.03886930217792177
+      },
+      "targetPosition": [
+        0,
+        1.63,
+        -20.3
+      ]
+    },
+    {
+      "room": "observatory",
+      "action": "to_archive",
+      "label": "THE ARCHIVE",
+      "reachable": true,
+      "vantage": {
+        "x": 1.662983158520316,
+        "z": 19.611169821742838,
+        "yaw": 1.9634954084936216,
+        "pitch": -0.03886930217792177
+      },
+      "targetPosition": [
+        0,
+        1.63,
+        20.3
+      ]
+    },
+    {
+      "room": "observatory",
+      "action": "to_rooftop",
+      "label": "ABOVE THE BUILDING",
+      "reachable": true,
+      "vantage": {
+        "x": 9.811169821742839,
+        "z": -1.6629831585203163,
+        "yaw": -2.7488935718910694,
+        "pitch": -0.03886930217792178
+      },
+      "targetPosition": [
+        10.5,
+        1.63,
+        0
+      ]
+    },
+    {
+      "room": "observatory",
+      "action": "orrery",
+      "label": "Ask the machine to measure you",
+      "reachable": true,
+      "vantage": {
+        "x": 0,
+        "z": 5.43,
+        "yaw": 0,
+        "pitch": -0.13800602365751946
+      },
+      "targetPosition": [
+        0,
+        1.45,
+        3.63
+      ]
+    },
+    {
+      "room": "observatory",
+      "action": "observatory_note",
+      "label": "Read the astronomer’s note",
+      "reachable": true,
+      "vantage": {
+        "x": -6,
+        "z": 11.8,
+        "yaw": 0,
+        "pitch": -0.1380060236575194
+      },
+      "targetPosition": [
+        -6,
+        1.45,
+        10
+      ]
+    },
+    {
+      "room": "observatory",
+      "action": "author",
+      "label": "Claim the name beneath the mechanism",
+      "reachable": true,
+      "vantage": {
+        "x": -9.11116982174284,
+        "z": -12.337016841479684,
+        "yaw": 0.39269908169872414,
+        "pitch": -0.3217505543966422
+      },
+      "targetPosition": [
+        -9.8,
+        1.1,
+        -14
+      ]
+    },
+    {
+      "room": "garden",
+      "action": "depart",
+      "label": "LEAVE THE STORY",
+      "reachable": true,
+      "vantage": {
+        "x": 0,
+        "z": -18.5,
+        "yaw": 0,
+        "pitch": -0.03886930217792177
+      },
+      "targetPosition": [
+        0,
+        1.63,
+        -20.3
+      ]
+    },
+    {
+      "room": "garden",
+      "action": "to_observatory",
+      "label": "TAKE ANOTHER LOOK",
+      "reachable": true,
+      "vantage": {
+        "x": 1.662983158520316,
+        "z": 19.611169821742838,
+        "yaw": 1.9634954084936216,
+        "pitch": -0.03886930217792177
+      },
+      "targetPosition": [
+        0,
+        1.63,
+        20.3
+      ]
+    },
+    {
+      "room": "garden",
+      "action": "free_predecessor",
+      "label": "Go back down for him",
+      "reachable": true,
+      "vantage": {
+        "x": -10.311169821742839,
+        "z": -12.337016841479684,
+        "yaw": 0.39269908169872414,
+        "pitch": -0.21866894587394195
+      },
+      "targetPosition": [
+        -11,
+        1.3,
+        -14
+      ]
+    },
+    {
+      "room": "garden",
+      "action": "tree",
+      "label": "Ask the tree why it is here",
+      "reachable": true,
+      "vantage": {
+        "x": 1.783576169294827,
+        "z": -3.0939438929082828,
+        "yaw": 1.5707963267948966,
+        "pitch": 0.6254686255880729
+      },
+      "targetPosition": [
+        -0.016423830705173035,
+        2.9999550426273003,
+        -3.0939438929082828
+      ]
+    },
+    {
+      "room": "garden",
+      "action": "garden_bench",
+      "label": "Let this be enough",
+      "reachable": true,
+      "vantage": {
+        "x": 8.8,
+        "z": 1,
+        "yaw": 1.5707963267948966,
+        "pitch": -0.540419500270584
+      },
+      "targetPosition": [
+        7,
+        0.62,
+        1
+      ]
+    },
+    {
+      "room": "quiet",
+      "action": "to_archive",
+      "label": "NOT YET",
+      "reachable": true,
+      "vantage": {
+        "x": 1.662983158520316,
+        "z": 6.961169821742839,
+        "yaw": 1.9634954084936207,
+        "pitch": -0.03886930217792179
+      },
+      "targetPosition": [
+        0,
+        1.63,
+        7.65
+      ]
+    },
+    {
+      "room": "quiet",
+      "action": "sit",
+      "label": "Sit without earning anything",
+      "reachable": true,
+      "vantage": {
+        "x": 0,
+        "z": -1.2,
+        "yaw": 0,
+        "pitch": -0.5605943251656303
+      },
+      "targetPosition": [
+        0,
+        0.57,
+        -3
+      ]
+    },
+    {
+      "room": "records",
+      "action": "to_archive",
+      "label": "BACK TO THE ARCHIVE",
+      "reachable": true,
+      "vantage": {
+        "x": -2.9370168414796836,
+        "z": 11.961169821742839,
+        "yaw": 1.9634954084936207,
+        "pitch": -0.03886930217792179
+      },
+      "targetPosition": [
+        -4.6,
+        1.63,
+        12.65
+      ]
+    },
+    {
+      "room": "records",
+      "action": "to_mirror",
+      "label": "A ROOM OF YOU",
+      "reachable": true,
+      "vantage": {
+        "x": 6.262983158520315,
+        "z": 11.961169821742839,
+        "yaw": 1.9634954084936207,
+        "pitch": -0.03886930217792179
+      },
+      "targetPosition": [
+        4.6,
+        1.63,
+        12.65
+      ]
+    },
+    {
+      "room": "records",
+      "action": "records_file",
+      "label": "Read the file that has your name",
+      "reachable": true,
+      "vantage": {
+        "x": 0,
+        "z": -0.683,
+        "yaw": 0,
+        "pitch": -0.20805613679102575
+      },
+      "targetPosition": [
+        0,
+        1.32,
+        -2.483
+      ]
+    },
+    {
+      "room": "records",
+      "action": "records_shelf",
+      "label": "Search the shelf of the ones who nearly arrived",
+      "reachable": true,
+      "vantage": {
+        "x": 8.272792206135785,
+        "z": 3.2727922061357857,
+        "yaw": 0.785398163397448,
+        "pitch": -0.3708912888126624
+      },
+      "targetPosition": [
+        7,
+        1,
+        2
+      ]
+    },
+    {
+      "room": "records",
+      "action": "records_confront",
+      "label": "Ask whether you are a replacement",
+      "reachable": true,
+      "vantage": {
+        "x": 3.5,
+        "z": -2.8,
+        "yaw": 0,
+        "pitch": -0.19204801724073003
+      },
+      "targetPosition": [
+        3.5,
+        1.35,
+        -4.6
+      ]
+    },
+    {
+      "room": "mirror",
+      "action": "to_records",
+      "label": "RECORDS",
+      "reachable": true,
+      "vantage": {
+        "x": 1.662983158520316,
+        "z": 10.961169821742839,
+        "yaw": 1.9634954084936207,
+        "pitch": -0.03886930217792179
+      },
+      "targetPosition": [
+        0,
+        1.63,
+        11.65
+      ]
+    },
+    {
+      "room": "mirror",
+      "action": "to_flood",
+      "label": "THE FLOOR THAT REMEMBERS",
+      "reachable": true,
+      "vantage": {
+        "x": 9.211169821742839,
+        "z": -1.6629831585203163,
+        "yaw": -2.7488935718910694,
+        "pitch": -0.03886930217792178
+      },
+      "targetPosition": [
+        9.9,
+        1.63,
+        0
+      ]
+    },
+    {
+      "room": "mirror",
+      "action": "mirror_story",
+      "label": "Become the one who complied",
+      "reachable": true,
+      "vantage": {
+        "x": -5,
+        "z": -1.2,
+        "yaw": 0,
+        "pitch": -0.3465388644339418
+      },
+      "targetPosition": [
+        -5,
+        1.05,
+        -3
+      ]
+    },
+    {
+      "room": "mirror",
+      "action": "mirror_none",
+      "label": "Become the one who refused",
+      "reachable": true,
+      "vantage": {
+        "x": 0,
+        "z": -2.2,
+        "yaw": 0,
+        "pitch": -0.34653886443394183
+      },
+      "targetPosition": [
+        0,
+        1.05,
+        -4
+      ]
+    },
+    {
+      "room": "mirror",
+      "action": "mirror_self",
+      "label": "Become the one who never came",
+      "reachable": true,
+      "vantage": {
+        "x": 5,
+        "z": -1.2,
+        "yaw": 0,
+        "pitch": -0.3465388644339418
+      },
+      "targetPosition": [
+        5,
+        1.05,
+        -3
+      ]
+    },
+    {
+      "room": "mirror",
+      "action": "mirror_look",
+      "label": "Look at the versions of you",
+      "reachable": true,
+      "vantage": {
+        "x": -8.211169821742839,
+        "z": -4.337016841479684,
+        "yaw": 0.39269908169872414,
+        "pitch": -0.11065722117389565
+      },
+      "targetPosition": [
+        -8.9,
+        1.5,
+        -6
+      ]
+    },
+    {
+      "room": "stairwell",
+      "action": "to_hub",
+      "label": "BACK TO ALMOST",
+      "reachable": true,
+      "vantage": {
+        "x": 1.662983158520316,
+        "z": 8.961169821742839,
+        "yaw": 1.9634954084936207,
+        "pitch": -0.03886930217792179
+      },
+      "targetPosition": [
+        0,
+        1.63,
+        9.65
+      ]
+    },
+    {
+      "room": "stairwell",
+      "action": "to_workshop",
+      "label": "WHERE I AM MENDED",
+      "reachable": true,
+      "vantage": {
+        "x": 6.211169821742839,
+        "z": -1.6629831585203163,
+        "yaw": -2.7488935718910694,
+        "pitch": -0.03886930217792178
+      },
+      "targetPosition": [
+        6.9,
+        1.63,
+        0
+      ]
+    },
+    {
+      "room": "stairwell",
+      "action": "stair_up",
+      "label": "Climb toward a floor you did not choose",
+      "reachable": true,
+      "vantage": {
+        "x": 0,
+        "z": -2.8,
+        "yaw": 0,
+        "pitch": -0.05549850524571677
+      },
+      "targetPosition": [
+        0,
+        1.6,
+        -4.6
+      ]
+    },
+    {
+      "room": "stairwell",
+      "action": "stair_down",
+      "label": "Walk down and out of the story",
+      "reachable": true,
+      "vantage": {
+        "x": -4.2,
+        "z": 7.2,
+        "yaw": 0,
+        "pitch": -0.19204801724073003
+      },
+      "targetPosition": [
+        -4.2,
+        1.35,
+        5.4
+      ]
+    },
+    {
+      "room": "workshop",
+      "action": "to_stairwell",
+      "label": "THE STAIRS",
+      "reachable": true,
+      "vantage": {
+        "x": -2.9370168414796836,
+        "z": 11.961169821742839,
+        "yaw": 1.9634954084936207,
+        "pitch": -0.03886930217792179
+      },
+      "targetPosition": [
+        -4.6,
+        1.63,
+        12.65
+      ]
+    },
+    {
+      "room": "workshop",
+      "action": "to_flood",
+      "label": "THE WATER",
+      "reachable": true,
+      "vantage": {
+        "x": 10.211169821742839,
+        "z": -1.6629831585203163,
+        "yaw": -2.7488935718910694,
+        "pitch": -0.03886930217792178
+      },
+      "targetPosition": [
+        10.9,
+        1.63,
+        0
+      ]
+    },
+    {
+      "room": "workshop",
+      "action": "workshop_repair",
+      "label": "Mend something, however small",
+      "reachable": true,
+      "vantage": {
+        "x": 1.5,
+        "z": 0.11700000000000021,
+        "yaw": 0,
+        "pitch": -0.20805613679102575
+      },
+      "targetPosition": [
+        1.5,
+        1.32,
+        -1.6829999999999998
+      ]
+    },
+    {
+      "room": "workshop",
+      "action": "workshop_truth",
+      "label": "Open the main panel",
+      "reachable": true,
+      "vantage": {
+        "x": -3.4,
+        "z": -2.8,
+        "yaw": 0,
+        "pitch": -0.11065722117389563
+      },
+      "targetPosition": [
+        -3.4,
+        1.5,
+        -4.6
+      ]
+    },
+    {
+      "room": "workshop",
+      "action": "workshop_stay",
+      "label": "Offer to stay",
+      "reachable": true,
+      "vantage": {
+        "x": 1.5,
+        "z": 7.2,
+        "yaw": 0,
+        "pitch": 0
+      },
+      "targetPosition": [
+        1.5,
+        1.7,
+        5.4
+      ]
+    },
+    {
+      "room": "flood",
+      "action": "to_mirror",
+      "label": "A ROOM OF YOU",
+      "reachable": true,
+      "vantage": {
+        "x": 6.262983158520315,
+        "z": 10.961169821742839,
+        "yaw": 1.9634954084936207,
+        "pitch": -0.03886930217792179
+      },
+      "targetPosition": [
+        4.6,
+        1.63,
+        11.65
+      ]
+    },
+    {
+      "room": "flood",
+      "action": "to_workshop",
+      "label": "WHERE I AM MENDED",
+      "reachable": true,
+      "vantage": {
+        "x": -6.211169821742839,
+        "z": 1.662983158520316,
+        "yaw": 0.39269908169872403,
+        "pitch": -0.03886930217792179
+      },
+      "targetPosition": [
+        -6.9,
+        1.63,
+        0
+      ]
+    },
+    {
+      "room": "flood",
+      "action": "flood_reach",
+      "label": "Reach into the water",
+      "reachable": true,
+      "vantage": {
+        "x": -4,
+        "z": -1.2,
+        "yaw": 0,
+        "pitch": -0.5880026035475675
+      },
+      "targetPosition": [
+        -4,
+        0.5,
+        -3
+      ]
+    },
+    {
+      "room": "flood",
+      "action": "flood_listen",
+      "label": "Listen again",
+      "reachable": true,
+      "vantage": {
+        "x": 4,
+        "z": -2.2,
+        "yaw": 0,
+        "pitch": -0.08314123188844119
+      },
+      "targetPosition": [
+        4,
+        1.55,
+        -4
+      ]
+    },
+    {
+      "room": "rooftop",
+      "action": "to_observatory",
+      "label": "THE UNWRITTEN SKY",
+      "reachable": true,
+      "vantage": {
+        "x": 0.6888301782571616,
+        "z": 16.262983158520317,
+        "yaw": 0.3926990816987239,
+        "pitch": -0.038869302177921755
+      },
+      "targetPosition": [
+        0,
+        1.63,
+        14.6
+      ]
+    },
+    {
+      "room": "rooftop",
+      "action": "roof_look",
+      "label": "Look at how small it is",
+      "reachable": true,
+      "vantage": {
+        "x": -8.711169821742839,
+        "z": -1.337016841479684,
+        "yaw": 0.39269908169872403,
+        "pitch": -0.05549850524571678
+      },
+      "targetPosition": [
+        -9.4,
+        1.6,
+        -3
+      ]
+    },
+    {
+      "room": "rooftop",
+      "action": "roof_name",
+      "label": "Read the names carved into the roof",
+      "reachable": true,
+      "vantage": {
+        "x": 9.088830178257162,
+        "z": -3.337016841479684,
+        "yaw": 0.39269908169872403,
+        "pitch": 0
+      },
+      "targetPosition": [
+        8.4,
+        1.7,
+        -5
+      ]
+    },
+    {
+      "room": "rooftop",
+      "action": "roof_accept",
+      "label": "Agree to wait for whoever comes after",
+      "reachable": true,
+      "vantage": {
+        "x": 0,
+        "z": -6.2,
+        "yaw": 0,
+        "pitch": 0
+      },
+      "targetPosition": [
+        0,
+        1.7,
+        -8
+      ]
+    },
+    {
+      "room": "rooftop",
+      "action": "free_predecessor",
+      "label": "Go back for the first Sadman",
+      "reachable": true,
+      "vantage": {
+        "x": -8.711169821742839,
+        "z": -7.337016841479684,
+        "yaw": 0.39269908169872414,
+        "pitch": -0.05549850524571678
+      },
+      "targetPosition": [
+        -9.4,
+        1.6,
+        -9
+      ]
+    }
+  ],
+  "passed": 74,
+  "failed": 0,
+  "rooms": 16,
+  "byRoom": {
+    "office": 5,
+    "hub": 6,
+    "approval": 4,
+    "button": 3,
+    "loop": 3,
+    "archive": 7,
+    "gallery": 4,
+    "observatory": 6,
+    "garden": 5,
+    "quiet": 2,
+    "records": 5,
+    "mirror": 6,
+    "stairwell": 4,
+    "workshop": 5,
+    "flood": 4,
+    "rooftop": 5
+  }
+}

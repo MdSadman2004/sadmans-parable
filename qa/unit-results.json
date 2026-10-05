@@ -1,0 +1,139 @@
+{
+  "tests": [
+    {
+      "name": "a new run is manual, clue-free and has no silently acquired ending",
+      "passed": true
+    },
+    {
+      "name": "standing at a desk is a choice, not an enforced time gate",
+      "passed": true
+    },
+    {
+      "name": "approval rejects insufficient stamps and keeps the shred escape available",
+      "passed": true
+    },
+    {
+      "name": "the annoying button has a finite eight-press conclusion",
+      "passed": true
+    },
+    {
+      "name": "the button room offers two honest escapes at every count",
+      "passed": true
+    },
+    {
+      "name": "repeated corridor resolves after three traversals",
+      "passed": true
+    },
+    {
+      "name": "rejecting the corridor is available before any repetition",
+      "passed": true
+    },
+    {
+      "name": "the museum refuses to become an endless click trap",
+      "passed": true
+    },
+    {
+      "name": "all seven original endings are still reachable",
+      "passed": true
+    },
+    {
+      "name": "sitting is reversible and resets the calm timer",
+      "passed": true
+    },
+    {
+      "name": "borrowing a memory cycles the four authored passages",
+      "passed": true
+    },
+    {
+      "name": "diagonal input and independent arrow aliases do not cancel on release",
+      "passed": true
+    },
+    {
+      "name": "collision forbids tunneling through a desk under a long step",
+      "passed": true
+    },
+    {
+      "name": "collision permits tangential sliding rather than sticking to a wall",
+      "passed": true
+    },
+    {
+      "name": "all room edges contain the player radius",
+      "passed": true
+    },
+    {
+      "name": "corrupt saves do not invent endings, rooms or clues",
+      "passed": true
+    },
+    {
+      "name": "the expanded route vocabulary has sixteen rooms, twelve endings and five traces",
+      "passed": true
+    },
+    {
+      "name": "reducer returns new state without modifying the prior run",
+      "passed": true
+    },
+    {
+      "name": "recording a clue never mutates the previous run object",
+      "passed": true
+    },
+    {
+      "name": "every room is reachable from the office through the authored target graph",
+      "passed": true
+    },
+    {
+      "name": "every declared room has an authored entry line and every ending has authored text",
+      "passed": true
+    },
+    {
+      "name": "every dialogue line the reducer can emit exists in the authored story",
+      "passed": true
+    },
+    {
+      "name": "the workshop stays sealed until enough truth is found",
+      "passed": true
+    },
+    {
+      "name": "the roof stays sealed until enough truth is found",
+      "passed": true
+    },
+    {
+      "name": "refusal is an honest exit available immediately, with no locked door",
+      "passed": true
+    },
+    {
+      "name": "merging with the building requires an act of care, not just arrival",
+      "passed": true
+    },
+    {
+      "name": "taking the next shift is a deliberate, always-available ending",
+      "passed": true
+    },
+    {
+      "name": "the predecessor is revealed only after reading the file to its end",
+      "passed": true
+    },
+    {
+      "name": "freeing the first Sadman requires both the successor knowledge and four traces",
+      "passed": true
+    },
+    {
+      "name": "clues are only ever recorded from their authored source action",
+      "passed": true
+    },
+    {
+      "name": "the self/story/none alignment is exclusive and recorded",
+      "passed": true
+    },
+    {
+      "name": "no door or interactable in the world falls through to the generic refusal",
+      "passed": true
+    },
+    {
+      "name": "the two authored lines that used to be unreachable are now emitted on their beat",
+      "passed": true
+    }
+  ],
+  "pass_count": 33,
+  "fail_count": 0,
+  "skip_count": 0
+}

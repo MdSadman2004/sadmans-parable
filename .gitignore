@@ -1,0 +1,11 @@
+node_modules/
+dist/
+qa/vision-tools/
+qa/*.png
+qa/*-vision.jpg
+qa/live-*.jpg
+qa/served.html
+qa/profile-readme.md
+qa/target.json
+qa/server.log
+Sadmans-Parable-Playable.zip

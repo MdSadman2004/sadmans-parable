@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-05T00:10:00Z",
+  "reviewer": "independent delegate subagent (deleg_71095563); report recovered and saved by the parent after the reviewer exhausted its iteration budget before writing the file",
+  "artifactReviewed": {
+    "path": "E:/SadmansParable/Sadman's Parable.html",
+    "bytes": 1102665,
+    "sha256": "11e82dded5d4d6d0df1271921421788426ed610235c17bbad22796d3d26cc588"
+  },
+  "disposition": "fix",
+  "summary": "One HIGH defect and several LOW findings. All have been fixed and re-verified; nothing was left open. See fixLog.",
+  "findings": [
+    {
+      "severity": "HIGH",
+      "location": "src/rules.js interact() (pre-fix)",
+      "claim": "interact() had no case 'to_archive', so four labelled in-world doors emitted the generic 'wrong_way' line and never changed room: gallery (THINGS NOT YET DECIDED), observatory (THE ARCHIVE), quiet (NOT YET \u2014 the quiet room's only exit), records (BACK TO THE ARCHIVE). The shipped bundle contained 4 'to_archive' portal literals and 0 switch cases.",
+      "evidence": "Reproduced: interact({...initialRun(),room:'gallery'},'to_archive') returned {line:'wrong_way',room:null}. Not caught by the old suite: the reachability sweep proves panels are ray-hittable, and the old room BFS still reached every room through other edges.",
+      "status": "FIXED",
+      "fix": "Added `case 'to_archive': room('archive'); break;` to src/rules.js and added a regression test that extracts every door and interactable the world builds and fails if any resolves to 'wrong_way'. Also added a live browser check that presses E on the quiet-room exit and asserts the archive is entered: PASS, caption 'Archive of lives not lived\u2026'."
+    },
+    {
+      "severity": "LOW",
+      "location": "src/story.json",
+      "claim": "Two authored lines were dead content, never emitted: 'approval_exit' and 'records_confront'. 96 of 98 keys were reachable.",
+      "evidence": "Exhaustive reducer emission simulation.",
+      "status": "FIXED",
+      "fix": "'approve' now emits 'approval_exit' before the compliance ending, and the predecessor confrontation now emits 'records_confront' before the ending, so both lines play on the beat they were written for. A test asserts both are emitted."
+    },
+    {
+      "severity": "LOW",
+      "location": "src/main.js return-room handler",
+      "claim": "'Return to your room' passed prior='restart' to goRoom; no such story key exists, so half the composed line was silently dropped.",
+      "evidence": "story.lines['restart'] undefined; filter(Boolean) removed it.",
+      "status": "FIXED",
+      "fix": "Argument removed; the handler now calls goRoom('office')."
+    },
+    {
+      "severity": "LOW",
+      "location": "src/main.js continueRun + src/rules.js safeSave",
+      "claim": "A hand-edited localStorage checkpoint can grant never-earned traces/predecessor/mercy, opening the workshop/roof/homecoming gates and allowing merge/homecoming without earning them.",
+      "evidence": "Code-level reasoning; restore filters trace ids and value===true only.",
+      "status": "ACCEPTED AND DOCUMENTED",
+      "fix": "Not treated as a defect to patch: this is a single-player game whose progress lives in the player's own browser storage. safeSave/clamping already prevent unknown endings, unknown rooms, crashes and forged counters, which is the part that matters for correctness. DESIGN.md now states plainly that the save is player-editable by design and that no tamper resistance is claimed. QA isolation is unaffected: qaMode forces safeSave(null) and all persistence is a no-op."
+    },
+    {
+      "severity": "LOW",
+      "location": "src/rules.js, src/world.js",
+      "claim": "Vestigial run state: `tree` and `authorFound` are written and persisted but read by no branching logic; `roof_name` setting `authorFound` was semantically wrong.",
+      "evidence": "Zero reads of run.tree; authorFound read only by the save/restore path.",
+      "status": "PARTLY FIXED AND DOCUMENTED",
+      "fix": "Removed the semantically wrong authorFound write from the roof interaction. `tree` and `authorFound` are retained as recorded flags for save compatibility and are now named as non-branching in DESIGN.md so nobody mistakes them for hidden depth."
+    },
+    {
+      "severity": "LOW",
+      "location": "qa/source-manifest.json",
+      "claim": "tools/perceive.py hash mismatched the file on disk.",
+      "evidence": "Manifest hash vs actual file hash.",
+      "status": "STALE",
+      "fix": "The manifest was regenerated after that edit; a re-check now reports zero mismatches across all 18 tracked files."
+    },
+    {
+      "severity": "LOW",
+      "location": "tools/build.mjs build.json",
+      "claim": "dist/build.json reported rooms:10 / endings:7 because the numbers were hardcoded, so a build of the 16-room game carried stale counts.",
+      "evidence": "tools/build.mjs:19 hardcoded the pair.",
+      "status": "FIXED",
+      "fix": "build.mjs now derives ROOM_IDS, ENDING_IDS and the line count from src/rules.js and src/story.json. The current build reports rooms:16, endings:12, lines:98."
+    },
+    {
+      "severity": "LOW",
+      "location": "qa/SELF-EVALUATION.md",
+      "claim": "Stale internal note still described seven endings.",
+      "evidence": "Direct read.",
+      "status": "FIXED",
+      "fix": "Rewritten for the expanded game."
+    }
+  ],
+  "dead_lines_after_fix": [],
+  "verified_counts": {
+    "rooms_declared": 16,
+    "rooms_rendered_runtime": 16,
+    "endings_declared": 12,
+    "endings_reached_runtime": 12,
+    "story_lines_authored": 98,
+    "story_lines_emittable": 98,
+    "traces": 5,
+    "workshop_gate_traces": 2,
+    "roof_gate_traces": 3,
+    "homecoming_traces": 4,
+    "interaction_targets": 74,
+    "reachability_checks_passed": "74/74",
+    "live_door_regression": "quiet-room to_archive panel armed and entered the archive on a real E keypress",
+    "dist_index_and_zip_member_html_match": true,
+    "offline_external_requests": 0,
+    "manual_default": true,
+    "qa_helpers_gated_by_qa_param": true
+  },
+  "limitations": [
+    "The reviewer did not drive a browser; in-browser suites were cross-checked statically there and re-executed by the parent after the fixes.",
+    "The to_archive defect was verified three ways (reducer import, source, minified bundle), independent of the QA artifacts.",
+    "Save forgeability is code-level reasoning, not an executed exploit against a real localStorage store.",
+    "No complete human playthrough, pixel-level art review, or long-duration stability test.",
+    "qa/review-expansion.json was not written by the reviewer (iteration cap); this file reproduces its report and adds the fix log."
+  ],
+  "postFixReVerification": {
+    "by": "parent, after applying every fix",
+    "standalone_bytes": 1102702,
+    "standalone_sha256": "7f7f1fff59327cb0e938b8a3d8d0a4e82554005b87fdf9138229bdab6b02e56f",
+    "unit_tests": "33/33 pass",
+    "runtime_checks": "53 pass / 0 fail, 0 game errors, 16 rooms, 12 endings",
+    "reachability": "74/74 targets",
+    "build_record": "rooms 16, endings 12, lines 98, derived from source",
+    "dead_lines": 0
+  }
+}

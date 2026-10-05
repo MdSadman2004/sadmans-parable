@@ -1,0 +1,628 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-04T16:19:33.069854+00:00",
+  "title": "Design System: Sadman's Parable",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "neutral",
+        "displayName": "Midnight Petrol",
+        "source": "src/style.css:1 :root --ink"
+      },
+      "paper": {
+        "role": "primary",
+        "displayName": "Warm Paper",
+        "purpose": "Main text and inverted primary-button surface."
+      },
+      "soft": {
+        "role": "neutral",
+        "displayName": "Muted Sage Paper",
+        "purpose": "Fine print and secondary prose."
+      },
+      "brass": {
+        "role": "primary",
+        "displayName": "Aged Brass",
+        "purpose": "Title emphasis, labels, headings and visible keyboard focus."
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Petrol Rule",
+        "purpose": "Dividers, secondary borders and scrollbar thumbs."
+      },
+      "button-surface": {
+        "role": "secondary",
+        "displayName": "Opaque Petrol Control"
+      },
+      "button-hover": {
+        "role": "secondary",
+        "displayName": "Lifted Petrol Control"
+      },
+      "primary-hover": {
+        "role": "secondary",
+        "displayName": "Warm Brass Paper"
+      },
+      "world-ink": {
+        "role": "world-material",
+        "displayName": "World Ink",
+        "source": "src/world.js:3 PALETTE.ink"
+      },
+      "world-brass": {
+        "role": "world-material",
+        "displayName": "World Brass",
+        "source": "src/world.js:3 PALETTE.brass"
+      },
+      "world-wood": {
+        "role": "world-material",
+        "displayName": "World Wood",
+        "source": "src/world.js:3 PALETTE.wood"
+      },
+      "world-wall": {
+        "role": "world-material",
+        "displayName": "World Wall",
+        "source": "src/world.js:3 PALETTE.wall"
+      },
+      "world-green": {
+        "role": "world-material",
+        "displayName": "World Green",
+        "source": "src/world.js:3 PALETTE.green"
+      },
+      "world-red": {
+        "role": "world-material",
+        "displayName": "World Red",
+        "source": "src/world.js:3 PALETTE.red"
+      },
+      "world-cream": {
+        "role": "world-material",
+        "displayName": "World Cream",
+        "source": "src/world.js:3 PALETTE.cream"
+      }
+    },
+    "worldPalette": {
+      "source": "src/world.js:3",
+      "tokenRefs": {
+        "ink": "{colors.world-ink}",
+        "brass": "{colors.world-brass}",
+        "wood": "{colors.world-wood}",
+        "wall": "{colors.world-wall}",
+        "green": "{colors.world-green}",
+        "red": "{colors.world-red}",
+        "cream": "{colors.world-cream}"
+      },
+      "formatNote": "Frontmatter hex colors are lossless CSS representations of the Three.js integer values; not rendered screenshot samples.",
+      "specialSceneColors": "Additional carpet, tile, orrery and garden literals are described with their locations in DESIGN.md; no synthesized palette is added."
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Editorial Display",
+        "purpose": "Game title; Libre Caslon Display 400."
+      },
+      "headline": {
+        "displayName": "Overlay Headline",
+        "purpose": "Pause, settings, collection and transcript headings."
+      },
+      "body": {
+        "displayName": "Interface Sans",
+        "purpose": "Manrope instructions and prose."
+      },
+      "caption": {
+        "displayName": "Building Dialogue",
+        "purpose": "Centered full-story captions on an opaque backing."
+      },
+      "fine": {
+        "displayName": "Subordinate Instructions",
+        "purpose": "Discovery status, local-save notice and supplementary help."
+      }
+    },
+    "worldPlaqueType": {
+      "fontRequest": "500 ${size}px Manrope, Arial",
+      "canvasWidth": 1024,
+      "minimumFontPx": 18,
+      "source": "src/world.js:25-29"
+    },
+    "fontRegistrationCaveat": {
+      "source": "tools/build.mjs:9-13",
+      "shippedFaces": [
+        "Libre Caslon Display 400",
+        "Manrope 400 from manrope400.ttf",
+        "Manrope 400 from manrope500.ttf",
+        "Manrope 600"
+      ],
+      "explicitManrope500Face": false,
+      "note": "Do not infer exact 500-weight glyph rendering from the source's requested weight."
+    },
+    "shadows": [
+      {
+        "name": "crosshair",
+        "value": "0 1px 3px #132e2d",
+        "purpose": "Small center marker legibility."
+      },
+      {
+        "name": "place-label",
+        "value": "0 1px 5px #0a2429",
+        "kind": "text-shadow",
+        "purpose": "Room label over world."
+      },
+      {
+        "name": "control-tips",
+        "value": "0 2px 5px #132e2d",
+        "kind": "text-shadow",
+        "purpose": "Bottom control tips over world."
+      }
+    ],
+    "motion": [
+      {
+        "name": "button-feedback",
+        "value": "background .18s, border-color .18s, transform .18s",
+        "source": "src/style.css:1 button"
+      },
+      {
+        "name": "button-press",
+        "value": "translateY(1px)",
+        "source": "src/style.css:1 button:active"
+      },
+      {
+        "name": "room-fade",
+        "value": "opacity .22s; scene travel after 230ms",
+        "source": "src/style.css:1 #fade; src/main.js:56"
+      },
+      {
+        "name": "dialogue-and-toast",
+        "value": "opacity .25s",
+        "source": "src/style.css:1 #subtitle, #toast"
+      },
+      {
+        "name": "orrery",
+        "value": "alternating ring angular speed +/-0.035 rad/s; core 0.045 rad/s; float sin(time*0.18)*0.13",
+        "source": "src/world.js:75-76"
+      },
+      {
+        "name": "garden",
+        "value": "tree rotation.z sin(time*0.22)*0.006; dust rotation.y time*0.012",
+        "source": "src/world.js:152,155"
+      },
+      {
+        "name": "reduced-camera-motion",
+        "value": "Walking bob omitted when game setting motion=true; world and title motion remain.",
+        "source": "src/main.js:17,72,78"
+      },
+      {
+        "name": "OS-reduced-motion",
+        "value": "DOM transitions removed for button, fade, subtitle and toast; state changes preserved.",
+        "source": "src/style.css:1 @media(prefers-reduced-motion:reduce)"
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "compact-menu",
+        "value": "max-width:700px",
+        "scope": "Menus/overlays only; no touch gameplay."
+      }
+    ],
+    "layout": {
+      "canvas": "fixed full viewport",
+      "menu": {
+        "padding": "8vh 7vw",
+        "copyMaxWidth": "500px",
+        "secondaryMinHeight": "36px",
+        "compactTopPadding": "13vh"
+      },
+      "overlay": {
+        "normalWidth": "min(440px,100%)",
+        "wideWidth": "min(830px,100%)",
+        "maxHeight": "90vh",
+        "outerPadding": "32px",
+        "compactOuterPadding": "16px"
+      },
+      "subtitle": {
+        "width": "min(820px,calc(100% - 60px))",
+        "bottom": "63px",
+        "padding": "12px 22px 15px",
+        "background": "rgba(5,23,28,.94)"
+      },
+      "settings": {
+        "columns": 2,
+        "gap": "45px",
+        "compactColumns": 1
+      },
+      "focusVisible": {
+        "outline": "2px solid var(--brass)",
+        "offset": "4px"
+      },
+      "shape": "Rectangular controls, panels and plaques; circular crosshair and astronomical mechanisms. No rounded-card system."
+    },
+    "renderer": {
+      "source": "src/main.js:20-22,46,85; src/world.js:81,168",
+      "library": "Three.js 0.180.0",
+      "outputColorSpace": "sRGB",
+      "toneMapping": "ACESFilmicToneMapping",
+      "exposure": 1.04,
+      "camera": {
+        "fieldOfViewDegrees": 68,
+        "near": 0.08,
+        "far": 600,
+        "standingHeight": 1.7,
+        "seatedHeight": 1.15
+      },
+      "highDetail": {
+        "shadows": "PCFSoftShadowMap",
+        "directionalShadowSize": [
+          1024,
+          1024
+        ],
+        "pixelRatioCap": 1.5
+      },
+      "lowDetail": {
+        "shadows": false,
+        "pixelRatio": 1
+      },
+      "automaticDetail": "One-way step down when playing below 27 fps after more than 240 frames; no guaranteed frame rate.",
+      "sceneLifetime": "Dispose room-owned geometries, materials and textures; retain shared box/sphere geometry and environment."
+    },
+    "architecture": [
+      {
+        "file": "src/main.js",
+        "locations": "15-26,28-42,48-88",
+        "owns": "Runtime state, overlays, manual input, rendering, local save, narration and QA-only helpers."
+      },
+      {
+        "file": "src/world.js",
+        "locations": "8-77,79-168",
+        "owns": "Authored geometry, procedural textures, plaques, targets, colliders, room builds, motion and disposal."
+      },
+      {
+        "file": "src/rules.js",
+        "locations": "1-84",
+        "owns": "Ten room IDs, seven ending IDs, save sanitization, collision movement and choice reducer."
+      },
+      {
+        "file": "src/story.json",
+        "locations": "2-109",
+        "owns": "69 authored line entries and seven ending records; not every line is invoked."
+      },
+      {
+        "file": "src/audio.js",
+        "locations": "1-40",
+        "owns": "Room drone pairs, filtered noise, steps/ticks/transition notes and optional installed local English speech."
+      },
+      {
+        "file": "src/style.css",
+        "locations": "1 (single minified-style line; refer to selectors)",
+        "owns": "Interface colors, typography, layout, interaction styling and compact-menu/reduced-motion media rules."
+      },
+      {
+        "file": "index.html",
+        "locations": "5-30",
+        "owns": "Source template for the canvas and title, pause, settings, ending, discovery, transcript and error interfaces."
+      },
+      {
+        "file": "tools/build.mjs",
+        "locations": "6-19",
+        "owns": "In-memory IIFE bundle, embedded fonts and standalone HTML outputs."
+      }
+    ],
+    "world": {
+      "roomCount": 10,
+      "sceneSpecificTargetCount": 39,
+      "endingCount": 7,
+      "authoredLineEntryCount": 69,
+      "sceneModel": "Separate room scenes rebuilt at interaction portals, not a contiguous streamed level.",
+      "rooms": [
+        {
+          "id": "office",
+          "name": "Your room",
+          "dimensions": [
+            14,
+            14
+          ],
+          "targets": 4,
+          "source": "src/world.js:87-95",
+          "routes": {
+            "to_hub": "hub"
+          },
+          "ending": "desk after three desk reads"
+        },
+        {
+          "id": "hub",
+          "name": "Department of Almost",
+          "dimensions": [
+            20,
+            24
+          ],
+          "targets": 4,
+          "source": "src/world.js:97-103",
+          "routes": {
+            "to_approval": "approval",
+            "to_loop": "loop",
+            "to_office": "office",
+            "to_button": "button"
+          }
+        },
+        {
+          "id": "approval",
+          "name": "Office of Permission",
+          "dimensions": [
+            16,
+            28
+          ],
+          "targets": 4,
+          "source": "src/world.js:105-109",
+          "routes": {
+            "shred": "archive",
+            "to_hub": "hub"
+          },
+          "ending": "compliance through approve after four stamps"
+        },
+        {
+          "id": "button",
+          "name": "The smallest possible favor",
+          "dimensions": [
+            14,
+            18
+          ],
+          "targets": 3,
+          "source": "src/world.js:111-114",
+          "routes": {
+            "button_leave": "gallery",
+            "loophole": "garden"
+          },
+          "ending": "petty after eight presses"
+        },
+        {
+          "id": "loop",
+          "name": "A short corridor",
+          "dimensionsRule": "width 6, depth 40 + run.loops * 10",
+          "targets": 3,
+          "source": "src/world.js:116-118",
+          "routes": {
+            "loop": "loop until third passage, then archive",
+            "reject": "archive",
+            "to_hub": "hub"
+          }
+        },
+        {
+          "id": "archive",
+          "name": "Archive of lives not lived",
+          "dimensions": [
+            26,
+            32
+          ],
+          "targets": 6,
+          "source": "src/world.js:120-128",
+          "routes": {
+            "to_observatory": "observatory",
+            "to_quiet": "quiet",
+            "to_gallery": "gallery",
+            "to_hub": "hub"
+          },
+          "content": "Instanced book stacks, four cycling memory excerpts, note, high clock and orrery."
+        },
+        {
+          "id": "gallery",
+          "name": "The museum of you",
+          "dimensions": [
+            20,
+            24
+          ],
+          "targets": 4,
+          "source": "src/world.js:130-134",
+          "routes": {
+            "to_archive": "archive",
+            "to_hub": "hub"
+          },
+          "ending": "petty after four objection presses"
+        },
+        {
+          "id": "observatory",
+          "name": "The unwritten sky",
+          "dimensions": [
+            22,
+            42
+          ],
+          "targets": 5,
+          "source": "src/world.js:136-142",
+          "routes": {
+            "to_garden": "garden",
+            "to_archive": "archive"
+          },
+          "ending": "author at hidden inscription"
+        },
+        {
+          "id": "garden",
+          "name": "Somewhere unmeasured",
+          "dimensions": [
+            32,
+            42
+          ],
+          "targets": 4,
+          "source": "src/world.js:144-158",
+          "routes": {
+            "to_observatory": "observatory"
+          },
+          "endings": {
+            "garden_bench": "wonder",
+            "depart": "departure"
+          },
+          "content": "Recursive tree and instanced leaves, bench, ocean below platform, sun, rings, dust and distant columns."
+        },
+        {
+          "id": "quiet",
+          "name": "A room without a task",
+          "dimensions": [
+            12,
+            16
+          ],
+          "targets": 2,
+          "source": "src/world.js:160-163",
+          "routes": {
+            "to_archive": "archive"
+          },
+          "ending": "stillness after 18 uninterrupted seated seconds; movement stands up"
+        }
+      ],
+      "endingIDs": [
+        "compliance",
+        "petty",
+        "stillness",
+        "wonder",
+        "departure",
+        "author",
+        "desk"
+      ],
+      "limits": {
+        "stamps": 4,
+        "buttonPresses": 8,
+        "corridorPassages": 3,
+        "galleryObjections": 4,
+        "stillnessSeconds": 18
+      },
+      "interaction": {
+        "rayDistance": 3.65,
+        "requiresOcclusionClearance": true,
+        "cooldownMs": 330,
+        "source": "src/main.js:22,57,69-70"
+      },
+      "movement": {
+        "walkSpeed": 3.5,
+        "runSpeed": 5.4,
+        "playerRadius": 0.28,
+        "source": "src/rules.js:4-7,21-40"
+      },
+      "save": {
+        "progressKey": "sadmans-parable:v1",
+        "settingsKey": "sadmans-parable:settings",
+        "checkpoint": "Room entrance and selected counters, not exact position; no seated timer persistence.",
+        "qaPersistence": false
+      }
+    },
+    "provenance": {
+      "artifact": "E:/SadmansParable/Sadman's Parable.html",
+      "artifactBytes": 1079685,
+      "artifactSHA256": "e2b6192ca80a377c89b83a5b18d8b48392fb138b15d18d07d8de9403c8574960",
+      "inMemoryBuildMatched": true,
+      "sourceManifestFilesMatched": 18,
+      "runtimeDependency": {
+        "name": "Three.js",
+        "version": "0.180.0",
+        "license": "MIT",
+        "licenseFile": "licenses/Three-MIT.txt"
+      },
+      "fonts": [
+        {
+          "name": "Libre Caslon Display",
+          "license": "SIL OFL",
+          "licenseFile": "licenses/Libre-Caslon-Display-OFL.txt"
+        },
+        {
+          "name": "Manrope",
+          "license": "SIL OFL",
+          "licenseFile": "licenses/Manrope-OFL.txt"
+        }
+      ],
+      "assetSource": "Original writing, geometry, seeded procedural raster textures and Web Audio synthesis; Google Fonts source URLs retained in public/fonts/source.css but not requested at runtime.",
+      "evidenceImages": "Local Chrome WebGL/DOM captures in qa/; -vision JPEGs are downscaled derivatives, not separate art assets.",
+      "reviewEvidence": "qa/review.json",
+      "limitations": [
+        "Principally source/evidence review; no direct pixel review or human playthrough.",
+        "Local SmolVLM2 descriptions are fallible and concern the older title-final.png, not the normal title.png.",
+        "QA room captures may carry stale relocation subtitles; ordinary goRoom entry narration is separate.",
+        "Existing 34 runtime checks and 39 standing-vantage raycast checks are not a complete manual route walkthrough.",
+        "Only menu fit is checked at 390x844; no touch controls are supplied.",
+        "No locked-60-fps, long-duration stability, or full WCAG-conformance claim.",
+        "The degraded regex detector is not a rendered contrast audit.",
+        "The in-game reduced-motion option removes walking bob, not all world or title-camera animation.",
+        "The playable ZIP predates these documentation files and does not include them."
+      ]
+    },
+    "documentationBasis": {
+      "sourceOfTruth": "DESIGN.md frontmatter contains normative primitives; sidecar carries extension metadata and self-contained samples only.",
+      "assignedWorld": ".impeccable/surface.md:4,9,12 — analog planetarium",
+      "newBranding": false,
+      "tonalRamps": "No source tonal ramp is defined; none is claimed as an implemented token."
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Paper/Ink inversion for Begin, Resume and Back.",
+      "html": "<button class=\"ds-primary\">Begin</button>",
+      "css": ".ds-primary{font:600 15px Manrope,'Segoe UI',sans-serif;cursor:pointer;background:var(--paper,#ebe4c7);color:var(--ink,#10272c);border:1px solid var(--paper,#ebe4c7);min-height:44px;padding:11px 20px;text-align:left;border-radius:0;transition:background .18s,border-color .18s,transform .18s}.ds-primary:hover{background:#d5bd85;border-color:#d5bd85}.ds-primary:active{transform:translateY(1px)}.ds-primary:focus-visible{outline:2px solid var(--brass,#d4b573);outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none}}"
+    },
+    {
+      "name": "Secondary Action",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Opaque petrol action within pause and ending overlays.",
+      "html": "<button class=\"ds-secondary\">Controls &amp; settings</button>",
+      "css": ".ds-secondary{font:400 15px Manrope,'Segoe UI',sans-serif;cursor:pointer;background:#16343a;color:var(--paper,#ebe4c7);border:1px solid var(--rule,#496160);min-height:44px;padding:11px 20px;text-align:left;border-radius:0;transition:background .18s,border-color .18s,transform .18s}.ds-secondary:hover{background:#254b4c;border-color:var(--brass,#d4b573)}.ds-secondary:active{transform:translateY(1px)}.ds-secondary:focus-visible{outline:2px solid var(--brass,#d4b573);outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-secondary{transition:none}}"
+    },
+    {
+      "name": "Title Secondary Action",
+      "kind": "button",
+      "description": "Quiet transparent menu action, not a pill or card.",
+      "html": "<button class=\"ds-title-secondary\">Things you have ended</button>",
+      "css": ".ds-title-secondary{font:400 15px Manrope,'Segoe UI',sans-serif;cursor:pointer;color:var(--paper,#ebe4c7);border:1px solid transparent;background:transparent;min-height:36px;min-width:235px;padding:11px 20px 11px 0;text-align:left;border-radius:0;transition:background .18s,border-color .18s,transform .18s}.ds-title-secondary:hover{color:var(--brass,#d4b573);border-color:transparent}.ds-title-secondary:active{transform:translateY(1px)}.ds-title-secondary:focus-visible{outline:2px solid var(--brass,#d4b573);outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-title-secondary{transition:none}}"
+    },
+    {
+      "name": "Building Caption",
+      "kind": "custom",
+      "refersTo": "caption",
+      "description": "Always-available narrative text on a dark backing; excerpt uses exact authored office text.",
+      "html": "<div class=\"ds-caption\" aria-live=\"polite\"><span>THE BUILDING</span><p>This is Sadman. By nine seventeen, his story had already been approved. An inconsiderate achievement, as he had not yet done anything. I am the Building. I will help him become the person on the form.</p></div>",
+      "css": ".ds-caption{width:min(820px,100%);padding:12px 22px 15px;background:rgba(5,23,28,.94);border-top:1px solid #4a6462;text-align:center;color:var(--paper,#ebe4c7);font-family:Manrope,'Segoe UI',sans-serif}.ds-caption span{font-size:10px;letter-spacing:.15em;color:var(--brass,#d4b573)}.ds-caption p{font-size:clamp(15px,1.3vw,19px);line-height:1.65;margin:7px 0 0;text-wrap:pretty}"
+    },
+    {
+      "name": "Interaction Cue",
+      "kind": "custom",
+      "description": "Contextual E key and exact available-action label; production placement is below the crosshair.",
+      "html": "<div class=\"ds-cue\"><span class=\"ds-key\">E</span><span>Read your finished story</span></div>",
+      "css": ".ds-cue{display:flex;gap:10px;align-items:center;justify-content:center;max-width:90vw;padding:9px 13px;background:rgba(6,25,30,.92);color:#efe8cf;font:400 13px Manrope,'Segoe UI',sans-serif;border:1px solid #567370}.ds-key{border:1px solid #aebeae;min-width:22px;height:23px;display:grid;place-items:center;font-size:12px}"
+    },
+    {
+      "name": "Rendering Detail Select",
+      "kind": "input",
+      "description": "Actual native rendering-quality choice; example mirrors the three production options.",
+      "html": "<label class=\"ds-quality\">Rendering detail<select><option>Automatic</option><option>High</option><option>Low · quieter GPU</option></select></label>",
+      "css": ".ds-quality{font:400 14px Manrope,'Segoe UI',sans-serif;color:var(--paper,#ebe4c7);display:flex;align-items:center;gap:12px;flex-wrap:wrap}.ds-quality select{font:inherit;background:#19353a;color:var(--paper,#ebe4c7);padding:10px;border:1px solid var(--rule,#496160);border-radius:0}.ds-quality select:focus-visible{outline:2px solid var(--brass,#d4b573);outline-offset:4px}"
+    },
+    {
+      "name": "Native Audio Checkbox",
+      "kind": "input",
+      "description": "Labeled native checkbox used by voice, mute and reduced-camera-motion preferences.",
+      "html": "<label class=\"ds-check\"><input type=\"checkbox\">Mute all sound</label>",
+      "css": ".ds-check{font:400 14px Manrope,'Segoe UI',sans-serif;display:flex;align-items:center;gap:12px;flex-wrap:wrap;cursor:pointer;color:var(--paper,#ebe4c7)}.ds-check input{width:18px;height:18px;accent-color:var(--brass,#d4b573)}.ds-check input:focus-visible{outline:2px solid var(--brass,#d4b573);outline-offset:4px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Analog planetarium",
+    "overview": "This document records the implemented world, not a proposed redesign. The pinned direction is an analog planetarium: petrol darkness and aged brass frame an institutional office that opens into archives, astronomical machinery, and an impossible garden. The first-person artifact fills the viewport. Overlays support the experience rather than presenting the game as a dashboard or card grid.\n\nThe Building begins as an unreliable administrator and becomes capable of company without another assignment. Provocation belongs to finite fictional tasks, never to pause, settings, or leaving. Spatial surprises emerge through the player's own exploration; the game does not move itself through a demonstration.",
+    "keyCharacteristics": [
+      "Procedural architecture, readable plaques, familiar office objects, and monumental brass mechanisms.",
+      "Editorial serif titles paired with compact sans-serif instructions and dialogue.",
+      "Recurring rectangular door frames and signs; cosmic circles are concentrated in the orrery, stars, and ocean rings.",
+      "Honest exits around bounded moving-goalpost tasks, followed by wonder and quiet."
+    ],
+    "rules": [
+      {
+        "name": "The Fiction Boundary Rule",
+        "body": "Red and changing counters may provoke within the story; primary navigation, pause, and exit feedback must remain honest.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "Do preserve the named protagonist, original writing, and the analog-planetarium material vocabulary.",
+      "Do keep the game manual by default and retain visible captions with an honest pause/transcript route.",
+      "Do preserve the finite counts and exits: four approval stamps, eight button presses, three corridor traversals, four gallery objections, and reversible stillness.",
+      "Do treat the HTML as the offline production artifact and keep asset provenance beside the source.",
+      "Do use this document descriptively; the source and matching built bytes remain the implementation truth."
+    ],
+    "donts": [
+      "Don't copy Stanley Parable dialogue, maps, recordings, or character/actor identities.",
+      "Don't turn fictional hostility into deceptive settings, blocked leaving, grading, or an endless task.",
+      "Don't document mobile menu fit as mobile gameplay, or reachability vantages as a complete human walkthrough.",
+      "Don't infer pixel-perfect appearance or complete accessibility from the regex detector or the small local visual model.",
+      "Don't introduce remote runtime resources or upload evidence images."
+    ]
+  }
+}

@@ -1,0 +1,1619 @@
+{
+  "checks": [
+    {
+      "name": "normal W input walks forward",
+      "passed": true,
+      "detail": {
+        "before": [
+          0,
+          1.7,
+          4.6
+        ],
+        "after": [
+          -0.30276979433566814,
+          1.7493422352770738,
+          1.5824011177530641
+        ]
+      }
+    },
+    {
+      "name": "D strafes right in camera space",
+      "passed": true,
+      "detail": {
+        "before": [
+          -0.30276979433566814,
+          1.7493422352770738,
+          1.5824011177530641
+        ],
+        "after": [
+          1.4983867456506144,
+          1.693987261505414,
+          1.4016826669389748
+        ]
+      }
+    },
+    {
+      "name": "Escape pauses honestly",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "paused movement does not drift",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "resume has no lingering manual keys",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "actual door raycast resolves the office exit",
+      "passed": true,
+      "detail": {
+        "target": "to_hub"
+      }
+    },
+    {
+      "name": "E on that physical door enters the hub",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "physical button is reachable by the interaction ray",
+      "passed": true,
+      "detail": {
+        "target": "button"
+      }
+    },
+    {
+      "name": "normal E input changes the button count",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "the new records file is physically reachable by ray",
+      "passed": true,
+      "detail": {
+        "target": "records_file"
+      }
+    },
+    {
+      "name": "a new aerial glass version is physically reachable by ray",
+      "passed": true,
+      "detail": {
+        "target": "mirror_none"
+      }
+    },
+    {
+      "name": "the quiet room exit panel resolves as a real target",
+      "passed": true,
+      "detail": {
+        "ok": true,
+        "x": 1.662983158520316,
+        "z": 6.961169821742839
+      }
+    },
+    {
+      "name": "the quiet exit is still armed on the frame before the key press",
+      "passed": true,
+      "detail": {
+        "action": "to_archive",
+        "state": "playing",
+        "transitioning": false,
+        "hidden": false
+      }
+    },
+    {
+      "name": "E on the previously dead quiet-room exit really enters the archive",
+      "passed": true,
+      "detail": {
+        "room": "archive",
+        "state": "playing",
+        "caption": "Archive of lives not lived. Every shelf holds the story of a"
+      }
+    },
+    {
+      "name": "room builds and renders: office",
+      "passed": true,
+      "detail": {
+        "draws": 119,
+        "triangles": 3192,
+        "meshes": 75,
+        "fps": 39
+      }
+    },
+    {
+      "name": "room builds and renders: hub",
+      "passed": true,
+      "detail": {
+        "draws": 91,
+        "triangles": 1732,
+        "meshes": 95,
+        "fps": 37
+      }
+    },
+    {
+      "name": "room builds and renders: approval",
+      "passed": true,
+      "detail": {
+        "draws": 334,
+        "triangles": 4876,
+        "meshes": 41,
+        "fps": 36
+      }
+    },
+    {
+      "name": "room builds and renders: button",
+      "passed": true,
+      "detail": {
+        "draws": 49,
+        "triangles": 1142,
+        "meshes": 50,
+        "fps": 42
+      }
+    },
+    {
+      "name": "room builds and renders: loop",
+      "passed": true,
+      "detail": {
+        "draws": 66,
+        "triangles": 736,
+        "meshes": 51,
+        "fps": 43
+      }
+    },
+    {
+      "name": "room builds and renders: archive",
+      "passed": true,
+      "detail": {
+        "draws": 193,
+        "triangles": 28766,
+        "meshes": 207,
+        "fps": 39
+      }
+    },
+    {
+      "name": "room builds and renders: gallery",
+      "passed": true,
+      "detail": {
+        "draws": 48,
+        "triangles": 1570,
+        "meshes": 53,
+        "fps": 47
+      }
+    },
+    {
+      "name": "room builds and renders: observatory",
+      "passed": true,
+      "detail": {
+        "draws": 98,
+        "triangles": 12394,
+        "meshes": 88,
+        "fps": 42
+      }
+    },
+    {
+      "name": "room builds and renders: garden",
+      "passed": true,
+      "detail": {
+        "draws": 143,
+        "triangles": 41804,
+        "meshes": 110,
+        "fps": 44
+      }
+    },
+    {
+      "name": "room builds and renders: quiet",
+      "passed": true,
+      "detail": {
+        "draws": 38,
+        "triangles": 1998,
+        "meshes": 40,
+        "fps": 47
+      }
+    },
+    {
+      "name": "room builds and renders: records",
+      "passed": true,
+      "detail": {
+        "draws": 106,
+        "triangles": 1648,
+        "meshes": 68,
+        "fps": 50
+      }
+    },
+    {
+      "name": "room builds and renders: mirror",
+      "passed": true,
+      "detail": {
+        "draws": 63,
+        "triangles": 1410,
+        "meshes": 64,
+        "fps": 53
+      }
+    },
+    {
+      "name": "room builds and renders: stairwell",
+      "passed": true,
+      "detail": {
+        "draws": 46,
+        "triangles": 762,
+        "meshes": 42,
+        "fps": 50
+      }
+    },
+    {
+      "name": "room builds and renders: workshop",
+      "passed": true,
+      "detail": {
+        "draws": 145,
+        "triangles": 2136,
+        "meshes": 108,
+        "fps": 47
+      }
+    },
+    {
+      "name": "room builds and renders: flood",
+      "passed": true,
+      "detail": {
+        "draws": 38,
+        "triangles": 770,
+        "meshes": 36,
+        "fps": 46
+      }
+    },
+    {
+      "name": "room builds and renders: rooftop",
+      "passed": true,
+      "detail": {
+        "draws": 75,
+        "triangles": 1982,
+        "meshes": 114,
+        "fps": 47
+      }
+    },
+    {
+      "name": "ending route: desk",
+      "passed": true,
+      "detail": {
+        "state": "ended",
+        "title": "THE PAGE"
+      }
+    },
+    {
+      "name": "ending route: compliance",
+      "passed": true,
+      "detail": {
+        "state": "ended",
+        "title": "APPROVED"
+      }
+    },
+    {
+      "name": "ending route: petty",
+      "passed": true,
+      "detail": {
+        "state": "ended",
+        "title": "THE NUMBER"
+      }
+    },
+    {
+      "name": "ending route: wonder",
+      "passed": true,
+      "detail": {
+        "state": "ended",
+        "title": "ENOUGH"
+      }
+    },
+    {
+      "name": "ending route: departure",
+      "passed": true,
+      "detail": {
+        "state": "ended",
+        "title": "DEPARTURE"
+      }
+    },
+    {
+      "name": "ending route: author",
+      "passed": true,
+      "detail": {
+        "state": "ended",
+        "title": "THE NAME"
+      }
+    },
+    {
+      "name": "ending route: refusal",
+      "passed": true,
+      "detail": {
+        "state": "ended",
+        "title": "REFUSAL"
+      }
+    },
+    {
+      "name": "ending route: successor",
+      "passed": true,
+      "detail": {
+        "state": "ended",
+        "title": "THE NEXT SHIFT"
+      }
+    },
+    {
+      "name": "ending route: predecessor",
+      "passed": true,
+      "detail": {
+        "state": "ended",
+        "title": "THE SECOND SADMAN"
+      }
+    },
+    {
+      "name": "ending route: merge",
+      "passed": true,
+      "detail": {
+        "state": "ended",
+        "title": "THE BUILDING"
+      }
+    },
+    {
+      "name": "ending route: homecoming",
+      "passed": true,
+      "detail": {
+        "state": "ended",
+        "title": "COME AND GET ME"
+      }
+    },
+    {
+      "name": "stillness ending is reachable without moving the player",
+      "passed": true,
+      "detail": {
+        "quietTime": 18.01660000000012
+      }
+    },
+    {
+      "name": "three repeated corridor passages reach the archive",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "a real clue updates the run and the HUD counter",
+      "passed": true,
+      "detail": {
+        "traces": 1,
+        "hud": "traces 1 / 5"
+      }
+    },
+    {
+      "name": "the workshop gate opens once the workshop threshold of truth is met",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "the workshop gate refuses an unearned entry with a real line",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "the roof gate refuses below three traces and names the reason",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "the clue dossier opens from pause and has an honest empty state",
+      "passed": true,
+      "detail": {
+        "open": true,
+        "empty": true
+      }
+    },
+    {
+      "name": "closing the dossier returns to pause, not to gameplay",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "walking cancels sitting without a penalty",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "name": "scene replacement retains bounded GPU resources across sixteen rooms",
+      "passed": true,
+      "detail": {
+        "before": [
+          9,
+          14
+        ],
+        "after": [
+          9,
+          14
+        ]
+      }
+    },
+    {
+      "name": "game runtime does not request external resources",
+      "passed": true,
+      "detail": {
+        "requests": []
+      }
+    },
+    {
+      "name": "title screen has no horizontal overflow at 390px",
+      "passed": true,
+      "detail": {}
+    }
+  ],
+  "passed": 53,
+  "failed": 0,
+  "room_count": 16,
+  "ending_count": 12,
+  "errors": 0,
+  "error_details": [],
+  "normal_input_checked": true,
+  "rooms": [
+    {
+      "room": "office",
+      "state": {
+        "state": "playing",
+        "room": "office",
+        "position": [
+          0,
+          1.7,
+          4.6
+        ],
+        "yaw": 0.1,
+        "pitch": 0,
+        "run": {
+          "room": "office",
+          "stamps": 0,
+          "button": 1,
+          "loops": 0,
+          "petty": 0,
+          "desk": 0,
+          "books": 0,
+          "tree": false,
+          "authorFound": false,
+          "sitting": false,
+          "quietTime": 0,
+          "visits": {
+            "office": 2,
+            "hub": 1,
+            "button": 1,
+            "records": 1,
+            "mirror": 1,
+            "quiet": 1,
+            "archive": 1
+          },
+          "seen": {},
+          "elapsed": 2.766599999999999,
+          "traces": {},
+          "predecessor": false,
+          "alignment": null,
+          "mercy": 0,
+          "files": 0,
+          "shelf": 0,
+          "listens": 0
+        },
+        "endings": [],
+        "target": null,
+        "traces": 0,
+        "alignment": null,
+        "predecessor": false,
+        "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
+        "frames": 164,
+        "fps": 39,
+        "draws": 119,
+        "triangles": 3192,
+        "textures": 10,
+        "geometries": 17,
+        "mouseCaptured": false,
+        "metrics": {
+          "frames": 164,
+          "interactions": 3,
+          "roomChanges": 8,
+          "errors": [],
+          "maxDraws": 193,
+          "qualityChanges": 0
+        },
+        "qaMode": true
+      },
+      "meshes": 75
+    },
+    {
+      "room": "hub",
+      "state": {
+        "state": "playing",
+        "room": "hub",
+        "position": [
+          0,
+          1.7,
+          8
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "run": {
+          "room": "hub",
+          "stamps": 0,
+          "button": 1,
+          "loops": 0,
+          "petty": 0,
+          "desk": 0,
+          "books": 0,
+          "tree": false,
+          "authorFound": false,
+          "sitting": false,
+          "quietTime": 0,
+          "visits": {
+            "office": 2,
+            "hub": 2,
+            "button": 1,
+            "records": 1,
+            "mirror": 1,
+            "quiet": 1,
+            "archive": 1
+          },
+          "seen": {},
+          "elapsed": 3.299799999999999,
+          "traces": {},
+          "predecessor": false,
+          "alignment": null,
+          "mercy": 0,
+          "files": 0,
+          "shelf": 0,
+          "listens": 0
+        },
+        "endings": [],
+        "target": null,
+        "traces": 0,
+        "alignment": null,
+        "predecessor": false,
+        "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
+        "frames": 190,
+        "fps": 37,
+        "draws": 91,
+        "triangles": 1732,
+        "textures": 13,
+        "geometries": 27,
+        "mouseCaptured": false,
+        "metrics": {
+          "frames": 190,
+          "interactions": 3,
+          "roomChanges": 9,
+          "errors": [],
+          "maxDraws": 193,
+          "qualityChanges": 0
+        },
+        "qaMode": true
+      },
+      "meshes": 95
+    },
+    {
+      "room": "approval",
+      "state": {
+        "state": "playing",
+        "room": "approval",
+        "position": [
+          0,
+          1.7,
+          10
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "run": {
+          "room": "approval",
+          "stamps": 0,
+          "button": 1,
+          "loops": 0,
+          "petty": 0,
+          "desk": 0,
+          "books": 0,
+          "tree": false,
+          "authorFound": false,
+          "sitting": false,
+          "quietTime": 0,
+          "visits": {
+            "office": 2,
+            "hub": 2,
+            "button": 1,
+            "records": 1,
+            "mirror": 1,
+            "quiet": 1,
+            "archive": 1,
+            "approval": 1
+          },
+          "seen": {},
+          "elapsed": 3.7331999999999974,
+          "traces": {},
+          "predecessor": false,
+          "alignment": null,
+          "mercy": 0,
+          "files": 0,
+          "shelf": 0,
+          "listens": 0
+        },
+        "endings": [],
+        "target": null,
+        "traces": 0,
+        "alignment": null,
+        "predecessor": false,
+        "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
+        "frames": 214,
+        "fps": 36,
+        "draws": 334,
+        "triangles": 4876,
+        "textures": 23,
+        "geometries": 38,
+        "mouseCaptured": false,
+        "metrics": {
+          "frames": 214,
+          "interactions": 3,
+          "roomChanges": 10,
+          "errors": [],
+          "maxDraws": 334,
+          "qualityChanges": 0
+        },
+        "qaMode": true
+      },
+      "meshes": 41
+    },
+    {
+      "room": "button",
+      "state": {
+        "state": "playing",
+        "room": "button",
+        "position": [
+          0,
+          1.7,
+          5.8
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "run": {
+          "room": "button",
+          "stamps": 0,
+          "button": 1,
+          "loops": 0,
+          "petty": 0,
+          "desk": 0,
+          "books": 0,
+          "tree": false,
+          "authorFound": false,
+          "sitting": false,
+          "quietTime": 0,
+          "visits": {
+            "office": 2,
+            "hub": 2,
+            "button": 2,
+            "records": 1,
+            "mirror": 1,
+            "quiet": 1,
+            "archive": 1,
+            "approval": 1
+          },
+          "seen": {},
+          "elapsed": 4.316899999999997,
+          "traces": {},
+          "predecessor": false,
+          "alignment": null,
+          "mercy": 0,
+          "files": 0,
+          "shelf": 0,
+          "listens": 0
+        },
+        "endings": [],
+        "target": null,
+        "traces": 0,
+        "alignment": null,
+        "predecessor": false,
+        "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
+        "frames": 244,
+        "fps": 42,
+        "draws": 49,
+        "triangles": 1142,
+        "textures": 6,
+        "geometries": 17,
+        "mouseCaptured": false,
+        "metrics": {
+          "frames": 244,
+          "interactions": 3,
+          "roomChanges": 11,
+          "errors": [],
+          "maxDraws": 334,
+          "qualityChanges": 0
+        },
+        "qaMode": true
+      },
+      "meshes": 50
+    },
+    {
+      "room": "loop",
+      "state": {
+        "state": "playing",
+        "room": "loop",
+        "position": [
+          0,
+          1.7,
+          17
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "run": {
+          "room": "loop",
+          "stamps": 0,
+          "button": 1,
+          "loops": 0,
+          "petty": 0,
+          "desk": 0,
+          "books": 0,
+          "tree": false,
+          "authorFound": false,
+          "sitting": false,
+          "quietTime": 0,
+          "visits": {
+            "office": 2,
+            "hub": 2,
+            "button": 2,
+            "records": 1,
+            "mirror": 1,
+            "quiet": 1,
+            "archive": 1,
+            "approval": 1,
+            "loop": 1
+          },
+          "seen": {},
+          "elapsed": 4.783200000000001,
+          "traces": {},
+          "predecessor": false,
+          "alignment": null,
+          "mercy": 0,
+          "files": 0,
+          "shelf": 0,
+          "listens": 0
+        },
+        "endings": [],
+        "target": null,
+        "traces": 0,
+        "alignment": null,
+        "predecessor": false,
+        "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
+        "frames": 270,
+        "fps": 43,
+        "draws": 66,
+        "triangles": 736,
+        "textures": 19,
+        "geometries": 21,
+        "mouseCaptured": false,
+        "metrics": {
+          "frames": 270,
+          "interactions": 3,
+          "roomChanges": 12,
+          "errors": [],
+          "maxDraws": 334,
+          "qualityChanges": 0
+        },
+        "qaMode": true
+      },
+      "meshes": 51
+    },
+    {
+      "room": "archive",
+      "state": {
+        "state": "playing",
+        "room": "archive",
+        "position": [
+          0,
+          1.7,
+          11
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "run": {
+          "room": "archive",
+          "stamps": 0,
+          "button": 1,
+          "loops": 0,
+          "petty": 0,
+          "desk": 0,
+          "books": 0,
+          "tree": false,
+          "authorFound": false,
+          "sitting": false,
+          "quietTime": 0,
+          "visits": {
+            "office": 2,
+            "hub": 2,
+            "button": 2,
+            "records": 1,
+            "mirror": 1,
+            "quiet": 1,
+            "archive": 2,
+            "approval": 1,
+            "loop": 1
+          },
+          "seen": {},
+          "elapsed": 5.2832000000000034,
+          "traces": {},
+          "predecessor": false,
+          "alignment": null,
+          "mercy": 0,
+          "files": 0,
+          "shelf": 0,
+          "listens": 0
+        },
+        "endings": [],
+        "target": null,
+        "traces": 0,
+        "alignment": null,
+        "predecessor": false,
+        "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
+        "frames": 296,
+        "fps": 39,
+        "draws": 193,
+        "triangles": 28766,
+        "textures": 9,
+        "geometries": 47,
+        "mouseCaptured": false,
+        "metrics": {
+          "frames": 296,
+          "interactions": 3,
+          "roomChanges": 13,
+          "errors": [],
+          "maxDraws": 334,
+          "qualityChanges": 0
+        },
+        "qaMode": true
+      },
+      "meshes": 207
+    },
+    {
+      "room": "gallery",
+      "state": {
+        "state": "playing",
+        "room": "gallery",
+        "position": [
+          0,
+          1.7,
+          8
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "run": {
+          "room": "gallery",
+          "stamps": 0,
+          "button": 1,
+          "loops": 0,
+          "petty": 0,
+          "desk": 0,
+          "books": 0,
+          "tree": false,
+          "authorFound": false,
+          "sitting": false,
+          "quietTime": 0,
+          "visits": {
+            "office": 2,
+            "hub": 2,
+            "button": 2,
+            "records": 1,
+            "mirror": 1,
+            "quiet": 1,
+            "archive": 2,
+            "approval": 1,
+            "loop": 1,
+            "gallery": 1
+          },
+          "seen": {},
+          "elapsed": 5.633100000000007,
+          "traces": {},
+          "predecessor": false,
+          "alignment": null,
+          "mercy": 0,
+          "files": 0,
+          "shelf": 0,
+          "listens": 0
+        },
+        "endings": [],
+        "target": null,
+        "traces": 0,
+        "alignment": null,
+        "predecessor": false,
+        "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
+        "frames": 317,
+        "fps": 47,
+        "draws": 48,
+        "triangles": 1570,
+        "textures": 12,
+        "geometries": 29,
+        "mouseCaptured": false,
+        "metrics": {
+          "frames": 317,
+          "interactions": 3,
+          "roomChanges": 14,
+          "errors": [],
+          "maxDraws": 334,
+          "qualityChanges": 0
+        },
+        "qaMode": true
+      },
+      "meshes": 53
+    },
+    {
+      "room": "observatory",
+      "state": {
+        "state": "playing",
+        "room": "observatory",
+        "position": [
+          0,
+          1.7,
+          17
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "run": {
+          "room": "observatory",
+          "stamps": 0,
+          "button": 1,
+          "loops": 0,
+          "petty": 0,
+          "desk": 0,
+          "books": 0,
+          "tree": false,
+          "authorFound": false,
+          "sitting": false,
+          "quietTime": 0,
+          "visits": {
+            "office": 2,
+            "hub": 2,
+            "button": 2,
+            "records": 1,
+            "mirror": 1,
+            "quiet": 1,
+            "archive": 2,
+            "approval": 1,
+            "loop": 1,
+            "gallery": 1,
+            "observatory": 1
+          },
+          "seen": {},
+          "elapsed": 6.216400000000012,
+          "traces": {},
+          "predecessor": false,
+          "alignment": null,
+          "mercy": 0,
+          "files": 0,
+          "shelf": 0,
+          "listens": 0
+        },
+        "endings": [],
+        "target": null,
+        "traces": 0,
+        "alignment": null,
+        "predecessor": false,
+        "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
+        "frames": 348,
+        "fps": 42,
+        "draws": 98,
+        "triangles": 12394,
+        "textures": 10,
+        "geometries": 29,
+        "mouseCaptured": false,
+        "metrics": {
+          "frames": 348,
+          "interactions": 3,
+          "roomChanges": 15,
+          "errors": [],
+          "maxDraws": 334,
+          "qualityChanges": 0
+        },
+        "qaMode": true
+      },
+      "meshes": 88
+    },
+    {
+      "room": "garden",
+      "state": {
+        "state": "playing",
+        "room": "garden",
+        "position": [
+          0,
+          1.7,
+          17
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "run": {
+          "room": "garden",
+          "stamps": 0,
+          "button": 1,
+          "loops": 0,
+          "petty": 0,
+          "desk": 0,
+          "books": 0,
+          "tree": false,
+          "authorFound": false,
+          "sitting": false,
+          "quietTime": 0,
+          "visits": {
+            "office": 2,
+            "hub": 2,
+            "button": 2,
+            "records": 1,
+            "mirror": 1,
+            "quiet": 1,
+            "archive": 2,
+            "approval": 1,
+            "loop": 1,
+            "gallery": 1,
+            "observatory": 1,
+            "garden": 1
+          },
+          "seen": {},
+          "elapsed": 6.616500000000014,
+          "traces": {},
+          "predecessor": false,
+          "alignment": null,
+          "mercy": 0,
+          "files": 0,
+          "shelf": 0,
+          "listens": 0
+        },
+        "endings": [],
+        "target": null,
+        "traces": 0,
+        "alignment": null,
+        "predecessor": false,
+        "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
+        "frames": 370,
+        "fps": 44,
+        "draws": 143,
+        "triangles": 41804,
+        "textures": 6,
+        "geometries": 82,
+        "mouseCaptured": false,
+        "metrics": {
+          "frames": 370,
+          "interactions": 3,
+          "roomChanges": 16,
+          "errors": [],
+          "maxDraws": 334,
+          "qualityChanges": 0
+        },
+        "qaMode": true
+      },
+      "meshes": 110
+    },
+    {
+      "room": "quiet",
+      "state": {
+        "state": "playing",
+        "room": "quiet",
+        "position": [
+          0,
+          1.7,
+          5.6
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "run": {
+          "room": "quiet",
+          "stamps": 0,
+          "button": 1,
+          "loops": 0,
+          "petty": 0,
+          "desk": 0,
+          "books": 0,
+          "tree": false,
+          "authorFound": false,
+          "sitting": false,
+          "quietTime": 0,
+          "visits": {
+            "office": 2,
+            "hub": 2,
+            "button": 2,
+            "records": 1,
+            "mirror": 1,
+            "quiet": 2,
+            "archive": 2,
+            "approval": 1,
+            "loop": 1,
+            "gallery": 1,
+            "observatory": 1,
+            "garden": 1
+          },
+          "seen": {},
+          "elapsed": 7.100000000000015,
+          "traces": {},
+          "predecessor": false,
+          "alignment": null,
+          "mercy": 0,
+          "files": 0,
+          "shelf": 0,
+          "listens": 0
+        },
+        "endings": [],
+        "target": null,
+        "traces": 0,
+        "alignment": null,
+        "predecessor": false,
+        "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
+        "frames": 397,
+        "fps": 47,
+        "draws": 38,
+        "triangles": 1998,
+        "textures": 4,
+        "geometries": 8,
+        "mouseCaptured": false,
+        "metrics": {
+          "frames": 397,
+          "interactions": 3,
+          "roomChanges": 17,
+          "errors": [],
+          "maxDraws": 334,
+          "qualityChanges": 0
+        },
+        "qaMode": true
+      },
+      "meshes": 40
+    },
+    {
+      "room": "records",
+      "state": {
+        "state": "playing",
+        "room": "records",
+        "position": [
+          0,
+          1.7,
+          9
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "run": {
+          "room": "records",
+          "stamps": 0,
+          "button": 1,
+          "loops": 0,
+          "petty": 0,
+          "desk": 0,
+          "books": 0,
+          "tree": false,
+          "authorFound": false,
+          "sitting": false,
+          "quietTime": 0,
+          "visits": {
+            "office": 2,
+            "hub": 2,
+            "button": 2,
+            "records": 2,
+            "mirror": 1,
+            "quiet": 2,
+            "archive": 2,
+            "approval": 1,
+            "loop": 1,
+            "gallery": 1,
+            "observatory": 1,
+            "garden": 1
+          },
+          "seen": {},
+          "elapsed": 7.6666000000000185,
+          "traces": {},
+          "predecessor": false,
+          "alignment": null,
+          "mercy": 0,
+          "files": 0,
+          "shelf": 0,
+          "listens": 0
+        },
+        "endings": [],
+        "target": null,
+        "traces": 0,
+        "alignment": null,
+        "predecessor": false,
+        "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
+        "frames": 427,
+        "fps": 50,
+        "draws": 106,
+        "triangles": 1648,
+        "textures": 8,
+        "geometries": 16,
+        "mouseCaptured": false,
+        "metrics": {
+          "frames": 427,
+          "interactions": 3,
+          "roomChanges": 18,
+          "errors": [],
+          "maxDraws": 334,
+          "qualityChanges": 0
+        },
+        "qaMode": true
+      },
+      "meshes": 68
+    },
+    {
+      "room": "mirror",
+      "state": {
+        "state": "playing",
+        "room": "mirror",
+        "position": [
+          0,
+          1.7,
+          10
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "run": {
+          "room": "mirror",
+          "stamps": 0,
+          "button": 1,
+          "loops": 0,
+          "petty": 0,
+          "desk": 0,
+          "books": 0,
+          "tree": false,
+          "authorFound": false,
+          "sitting": false,
+          "quietTime": 0,
+          "visits": {
+            "office": 2,
+            "hub": 2,
+            "button": 2,
+            "records": 2,
+            "mirror": 2,
+            "quiet": 2,
+            "archive": 2,
+            "approval": 1,
+            "loop": 1,
+            "gallery": 1,
+            "observatory": 1,
+            "garden": 1
+          },
+          "seen": {},
+          "elapsed": 8.250000000000016,
+          "traces": {},
+          "predecessor": false,
+          "alignment": null,
+          "mercy": 0,
+          "files": 0,
+          "shelf": 0,
+          "listens": 0
+        },
+        "endings": [],
+        "target": null,
+        "traces": 0,
+        "alignment": null,
+        "predecessor": false,
+        "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
+        "frames": 460,
+        "fps": 53,
+        "draws": 63,
+        "triangles": 1410,
+        "textures": 9,
+        "geometries": 15,
+        "mouseCaptured": false,
+        "metrics": {
+          "frames": 460,
+          "interactions": 3,
+          "roomChanges": 19,
+          "errors": [],
+          "maxDraws": 334,
+          "qualityChanges": 0
+        },
+        "qaMode": true
+      },
+      "meshes": 64
+    },
+    {
+      "room": "stairwell",
+      "state": {
+        "state": "playing",
+        "room": "stairwell",
+        "position": [
+          0,
+          1.7,
+          8
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "run": {
+          "room": "stairwell",
+          "stamps": 0,
+          "button": 1,
+          "loops": 0,
+          "petty": 0,
+          "desk": 0,
+          "books": 0,
+          "tree": false,
+          "authorFound": false,
+          "sitting": false,
+          "quietTime": 0,
+          "visits": {
+            "office": 2,
+            "hub": 2,
+            "button": 2,
+            "records": 2,
+            "mirror": 2,
+            "quiet": 2,
+            "archive": 2,
+            "approval": 1,
+            "loop": 1,
+            "gallery": 1,
+            "observatory": 1,
+            "garden": 1,
+            "stairwell": 1
+          },
+          "seen": {},
+          "elapsed": 8.550000000000013,
+          "traces": {},
+          "predecessor": false,
+          "alignment": null,
+          "mercy": 0,
+          "files": 0,
+          "shelf": 0,
+          "listens": 0
+        },
+        "endings": [],
+        "target": null,
+        "traces": 0,
+        "alignment": null,
+        "predecessor": false,
+        "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
+        "frames": 476,
+        "fps": 50,
+        "draws": 46,
+        "triangles": 762,
+        "textures": 8,
+        "geometries": 15,
+        "mouseCaptured": false,
+        "metrics": {
+          "frames": 476,
+          "interactions": 3,
+          "roomChanges": 20,
+          "errors": [],
+          "maxDraws": 334,
+          "qualityChanges": 0
+        },
+        "qaMode": true
+      },
+      "meshes": 42
+    },
+    {
+      "room": "workshop",
+      "state": {
+        "state": "playing",
+        "room": "workshop",
+        "position": [
+          0,
+          1.7,
+          11
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "run": {
+          "room": "workshop",
+          "stamps": 0,
+          "button": 1,
+          "loops": 0,
+          "petty": 0,
+          "desk": 0,
+          "books": 0,
+          "tree": false,
+          "authorFound": false,
+          "sitting": false,
+          "quietTime": 0,
+          "visits": {
+            "office": 2,
+            "hub": 2,
+            "button": 2,
+            "records": 2,
+            "mirror": 2,
+            "quiet": 2,
+            "archive": 2,
+            "approval": 1,
+            "loop": 1,
+            "gallery": 1,
+            "observatory": 1,
+            "garden": 1,
+            "stairwell": 1,
+            "workshop": 1
+          },
+          "seen": {},
+          "elapsed": 9.066700000000006,
+          "traces": {},
+          "predecessor": false,
+          "alignment": null,
+          "mercy": 0,
+          "files": 0,
+          "shelf": 0,
+          "listens": 0
+        },
+        "endings": [],
+        "target": null,
+        "traces": 0,
+        "alignment": null,
+        "predecessor": false,
+        "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
+        "frames": 503,
+        "fps": 47,
+        "draws": 145,
+        "triangles": 2136,
+        "textures": 9,
+        "geometries": 19,
+        "mouseCaptured": false,
+        "metrics": {
+          "frames": 503,
+          "interactions": 3,
+          "roomChanges": 21,
+          "errors": [],
+          "maxDraws": 334,
+          "qualityChanges": 0
+        },
+        "qaMode": true
+      },
+      "meshes": 108
+    },
+    {
+      "room": "flood",
+      "state": {
+        "state": "playing",
+        "room": "flood",
+        "position": [
+          0,
+          1.7,
+          9
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "run": {
+          "room": "flood",
+          "stamps": 0,
+          "button": 1,
+          "loops": 0,
+          "petty": 0,
+          "desk": 0,
+          "books": 0,
+          "tree": false,
+          "authorFound": false,
+          "sitting": false,
+          "quietTime": 0,
+          "visits": {
+            "office": 2,
+            "hub": 2,
+            "button": 2,
+            "records": 2,
+            "mirror": 2,
+            "quiet": 2,
+            "archive": 2,
+            "approval": 1,
+            "loop": 1,
+            "gallery": 1,
+            "observatory": 1,
+            "garden": 1,
+            "stairwell": 1,
+            "workshop": 1,
+            "flood": 1
+          },
+          "seen": {},
+          "elapsed": 9.416600000000003,
+          "traces": {},
+          "predecessor": false,
+          "alignment": null,
+          "mercy": 0,
+          "files": 0,
+          "shelf": 0,
+          "listens": 0
+        },
+        "endings": [],
+        "target": null,
+        "traces": 0,
+        "alignment": null,
+        "predecessor": false,
+        "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
+        "frames": 522,
+        "fps": 46,
+        "draws": 38,
+        "triangles": 770,
+        "textures": 8,
+        "geometries": 15,
+        "mouseCaptured": false,
+        "metrics": {
+          "frames": 522,
+          "interactions": 3,
+          "roomChanges": 22,
+          "errors": [],
+          "maxDraws": 334,
+          "qualityChanges": 0
+        },
+        "qaMode": true
+      },
+      "meshes": 36
+    },
+    {
+      "room": "rooftop",
+      "state": {
+        "state": "playing",
+        "room": "rooftop",
+        "position": [
+          0,
+          1.7,
+          8
+        ],
+        "yaw": 0,
+        "pitch": 0,
+        "run": {
+          "room": "rooftop",
+          "stamps": 0,
+          "button": 1,
+          "loops": 0,
+          "petty": 0,
+          "desk": 0,
+          "books": 0,
+          "tree": false,
+          "authorFound": false,
+          "sitting": false,
+          "quietTime": 0,
+          "visits": {
+            "office": 2,
+            "hub": 2,
+            "button": 2,
+            "records": 2,
+            "mirror": 2,
+            "quiet": 2,
+            "archive": 2,
+            "approval": 1,
+            "loop": 1,
+            "gallery": 1,
+            "observatory": 1,
+            "garden": 1,
+            "stairwell": 1,
+            "workshop": 1,
+            "flood": 1,
+            "rooftop": 1
+          },
+          "seen": {},
+          "elapsed": 9.9667,
+          "traces": {},
+          "predecessor": false,
+          "alignment": null,
+          "mercy": 0,
+          "files": 0,
+          "shelf": 0,
+          "listens": 0
+        },
+        "endings": [],
+        "target": null,
+        "traces": 0,
+        "alignment": null,
+        "predecessor": false,
+        "caption": "Archive of lives not lived. Every shelf holds the story of a person who was almost given one and was not. Please borrow gently. They are lighter than they look and heavier than they read.",
+        "frames": 553,
+        "fps": 47,
+        "draws": 75,
+        "triangles": 1982,
+        "textures": 7,
+        "geometries": 37,
+        "mouseCaptured": false,
+        "metrics": {
+          "frames": 553,
+          "interactions": 3,
+          "roomChanges": 23,
+          "errors": [],
+          "maxDraws": 334,
+          "qualityChanges": 0
+        },
+        "qaMode": true
+      },
+      "meshes": 114
+    }
+  ],
+  "endings": [
+    "desk",
+    "compliance",
+    "petty",
+    "wonder",
+    "departure",
+    "author",
+    "refusal",
+    "successor",
+    "predecessor",
+    "merge",
+    "homecoming",
+    "stillness"
+  ],
+  "scope": "Keyboard/raycast smoke tests plus explicit QA relocation and reducer actions; not a full manual playthrough."
+}

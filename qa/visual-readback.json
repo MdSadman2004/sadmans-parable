@@ -1,0 +1,100 @@
+[
+  {
+    "image": "E:\\SadmansParable\\qa\\title.png",
+    "exit_code": 0,
+    "description": "The image is a screenshot of a website with a dark background and a 3D model of a ship in the background. The text on the screen is in gold color.",
+    "stderr": "",
+    "numeric": {
+      "size": [
+        1440,
+        900
+      ],
+      "png_bytes": 773689
+    },
+    "backend": "local SmolVLM2-2.2B, CPU, no image upload"
+  },
+  {
+    "image": "E:\\SadmansParable\\qa\\records-first.png",
+    "exit_code": 0,
+    "description": "The image is a 3D rendered scene of a room with a green carpet, white walls, and a ceiling with recessed lighting. The room has a desk, a chair, and several voting booths. There is text on the wall that reads \"The Shelf of the Who Nearly Arrived\". The text is in a serif font and is in white. The room is mostly empty with no characters or actions taking place. The image is rendered in a realistic style with realistic textures and lighting.",
+    "stderr": "",
+    "numeric": {
+      "size": [
+        1440,
+        900
+      ],
+      "png_bytes": 862670
+    },
+    "backend": "local SmolVLM2-2.2B, CPU, no image upload"
+  },
+  {
+    "image": "E:\\SadmansParable\\qa\\mirror-first.png",
+    "exit_code": 0,
+    "description": "The image is a 3D rendered scene with a dark blue background, stars, and a large room with a floor that has a grid pattern. There are three podiums in the room, each with a white sphere on top. The text \"A ROOM OF YOU\" is displayed at the top of the image, and \"THE ONE WHO WAS COMPLETED\" is displayed on the podium on the left. The text \"THE ROOM THAT REMEMBERS\" is displayed on the podium in the middle, and \"THE ROOM THAT FORGETS\" is displayed on the podium on the right. The text is in a white font, and the podiums are in a dark color. The image is mostly blank, with no visible gameplay.",
+    "stderr": "",
+    "numeric": {
+      "size": [
+        1440,
+        900
+      ],
+      "png_bytes": 364989
+    },
+    "backend": "local SmolVLM2-2.2B, CPU, no image upload"
+  },
+  {
+    "image": "E:\\SadmansParable\\qa\\flood-first.png",
+    "exit_code": 0,
+    "description": "The image is a 3D rendered scene of a room with a green floor, white walls, and a ceiling with fluorescent lights. The room has a door on the left side, a lamp on the right side, and a sign on the right side that reads \"The Floor That Remembers\". The text is in white and is placed on a green background. The room is mostly empty with no visible characters or actions taking place. The image is rendered in a realistic style with detailed textures and lighting.",
+    "stderr": "",
+    "numeric": {
+      "size": [
+        1440,
+        900
+      ],
+      "png_bytes": 650211
+    },
+    "backend": "local SmolVLM2-2.2B, CPU, no image upload"
+  },
+  {
+    "image": "E:\\SadmansParable\\qa\\rooftop-first.png",
+    "exit_code": 0,
+    "description": "The image is a 3D rendered scene with a dark blue background and a grid pattern on the floor. There are several objects in the scene, including a large rectangular object in the center, a smaller rectangular object to the left, and a cylindrical object to the right. The objects are colored in shades of gray and white. The text in the image is in a green color and is located at the top center of the image. The text reads \"ABOVE THE BUILDING\" and \"TAKE THE NEXT SHIFT\". The image is rendered in a 3D style with a realistic texture.",
+    "stderr": "",
+    "numeric": {
+      "size": [
+        1440,
+        900
+      ],
+      "png_bytes": 340192
+    },
+    "backend": "local SmolVLM2-2.2B, CPU, no image upload"
+  },
+  {
+    "image": "E:\\SadmansParable\\qa\\workshop-first.png",
+    "exit_code": 0,
+    "description": "The image is a 3D rendered scene with a dark blue background, a white floor, and a white lamp on the left side. There are three green signs with white text on the right side of the image. The text on the signs reads \"WHERE THE BUILDING IS MENDED\", \"A MARKETING MATCHING THE ONE HALF\", and \"-STAY AND KEEP ME RUNNING\". The image is mostly blank with no visible gameplay.",
+    "stderr": "",
+    "numeric": {
+      "size": [
+        1440,
+        900
+      ],
+      "png_bytes": 425186
+    },
+    "backend": "local SmolVLM2-2.2B, CPU, no image upload"
+  },
+  {
+    "image": "E:\\SadmansParable\\qa\\stairwell-first.png",
+    "exit_code": 0,
+    "description": "The image is a 3D rendered scene with a mostly blank background. The room is empty, with no visible characters or objects. The walls are painted green, and the floor is covered with a green carpet. There are two signs on the wall, one on the left side and one on the right side. The signs are white with black text. The left sign reads \"DOWN LEADS OUT NO ONE HAS TAKEN IT\" and the right sign reads \"WHERE I AM MENDED\". The room is lit by two ceiling lights, and there is a door on the right side of the room. The door is brown with a white handle. The image is rendered in a realistic style, with detailed textures and shadows.",
+    "stderr": "",
+    "numeric": {
+      "size": [
+        1440,
+        900
+      ],
+      "png_bytes": 871322
+    },
+    "backend": "local SmolVLM2-2.2B, CPU, no image upload"
+  }
+]

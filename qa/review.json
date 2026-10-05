@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-04T16:19:33.069854+00:00",
+  "disposition": "ship",
+  "summary": "Shippable as the scoped original offline desktop fable. No P0/P1 defect was established in the reviewed source and hash-matched evidence. This is a code/evidence finish review, not pixel-perfect art approval or a full human playthrough.",
+  "method": {
+    "independence": "Fresh reviewer context, independently read actual implementation and QA scripts/reports; did not accept build-thread conclusions as proof.",
+    "assessment": "Single-reviewer code/evidence assessment, not a live dual-assessor Impeccable critique.",
+    "visualMethod": "Existing local SmolVLM2 descriptions and source/DOM definitions only; screenshot dimensions and SHA-256 checked without viewing or uploading image pixels.",
+    "browserActions": "None. No browser tabs, user storage, source, test files, launchers or bundles were modified.",
+    "freshExecution": ["Read-only source/artifact hash and JSON-count assertions.", "Fresh reducer run: node --test tests/rules.test.mjs, 18 passed, 0 failed, 0 skipped, 0 cancelled.", "Fresh esbuild write:false reproduction with embedded fonts and source template; exact output equals standalone HTML and dist/index.html.", "Read-only ZIP CRC test and equality of archived standalone HTML with reviewed artifact."],
+    "detector": "Existing build detector ran in degraded regex mode; its [] result was not used as proof of contrast, accessibility or visual quality. No changed UI existed to scan in this review.",
+    "questions": "Questions skipped: the delegated task prohibits user questions; pinned PRODUCT.md/surface.md and actual source supplied the scope."
+  },
+  "findings": [],
+  "blockingFindingCount": 0,
+  "evidence": [
+    {
+      "claim": "The evaluated source is the source of the actual standalone artifact, not an unbuilt template.",
+      "locations": ["tools/build.mjs:6-18", "qa/source-manifest.json:2-22", "qa/delivery-results.json:7-10"],
+      "verification": "All 18 source-manifest files match their recorded hashes; fresh in-memory build matches 1,079,685-byte HTML SHA-256 e2b6192ca80a377c89b83a5b18d8b48392fb138b15d18d07d8de9403c8574960. Dist and ZIP HTML bytes also match."
+    },
+    {
+      "claim": "Finite provocation with real alternate exits, not an endless progression trap.",
+      "locations": ["src/rules.js:49-80", "src/world.js:105-118,130-134", "tests/rules.test.mjs:7-15"],
+      "verification": "Four-stamp approval, eight-press button, three-pass corridor and four-press gallery termination are explicit. Shred, button-leave, maintenance and corridor-reject routes do not require those counts. Fresh reducer tests exercise these properties."
+    },
+    {
+      "claim": "Manual first-person play and honest stop/recovery controls are implemented.",
+      "locations": ["src/main.js:28-42,51-57,63-67,71-83", "index.html:14,20-25", "README.md:13,33,43,49"],
+      "verification": "Normal update reads user keys and mouse state; no autopilot path. Pause clears movement and releases capture; blur/visibility pause. Capture failure has drag/arrow fallbacks. Resume, title, settings and return-to-room are real controls. Checkpoint resumes at the room entrance as documented. Existing normal-offline test shows idle x/z unchanged and W changes position."
+    },
+    {
+      "claim": "Ten authored spaces and all seven endings have meaningful automated coverage.",
+      "locations": ["src/rules.js:1-2", "src/world.js:87-163", "src/story.json:73-109", "tools/qa-runtime.mjs:17-38", "tools/reachability.mjs:5-7"],
+      "verification": "Independently counted 34/34 exact-true runtime checks and 39/39 exact-true scene-target reachability checks, zero recorded failures/errors. Target keys are unique by room/action and cover all ten rooms; observed ending IDs are exactly the seven authored ending IDs. Standing raycast vantages are collision-valid but do not prove every path walked by a human."
+    },
+    {
+      "claim": "Offline production delivery and optional local-only narration are implemented and evidenced.",
+      "locations": ["tools/build.mjs:6-18", "tools/qa-offline.mjs:5-21", "src/audio.js:34-39", "src/main.js:16,24,44,48", "PLAY.bat:3-9"],
+      "verification": "Network-forced-offline artifact report contains zero external requests/errors, normal manual W input, settings save/readback, and QA disabled. Source selects installed local English speech only. QA helpers require explicit ?qa=1 and progression/settings writes return early in that mode. The built markup has no http(s) src/href resource links. Launcher names the real standalone file."
+    },
+    {
+      "claim": "The implemented visual system has product-specific structure rather than a generic card shell.",
+      "locations": [".impeccable/surface.md:8-12", "src/style.css:1 (.menu, h1, .overlay, #subtitle, #interact)", "src/world.js:25-39,73-77,120-158", "src/main.js:20-22,72"],
+      "verification": "A full-viewport real observatory underlies the left-weighted title; rectangular brass portals/plaques recur across office and cosmic scenes. Serif titles, sans-serif instructions, petrol/paper/brass palette, dark caption backing and restrained center cue express the pinned analog-planetarium world. Visual composition is inferred from implementation and fallible existing local descriptions, not certified by direct pixel inspection."
+    },
+    {
+      "claim": "Source and evidence documentation does not overclaim the reported totals.",
+      "locations": ["qa/unit-results.json:2-78", "qa/runtime-results.json:2-289,873", "qa/reachability.json", "qa/delivery-results.json:11", "src/story.json:2-109"],
+      "verification": "Stored counts rederived as 18 + 34 + 39 = 91 recorded assertions; only 18 reducer tests were freshly executed in this review. There are 69 authored line entries, not a claim of 69 played/invoked passages, and seven ending records."
+    }
+  ],
+  "nonBlockingNotes": [
+    {
+      "location": "tools/build.mjs:12; public/fonts/source.css:16-20",
+      "note": "The 500 TTF is embedded but registered as Manrope 400, alongside the 400 TTF. Plaques request weight 500. This is documented as a fidelity caveat, not a demonstrated high-impact readability or progression defect."
+    },
+    {
+      "location": "src/main.js:24,55-56; tools/qa-runtime.mjs:20-23",
+      "note": "QA relocation directly calls enterRoom without narration, so existing room captures can carry the previous subtitle. Normal goRoom composes the destination entry text. Do not diagnose that capture artifact as ordinary room narration failure."
+    },
+    {
+      "location": "src/world.js:144-158; src/story.json:53,89-92",
+      "note": "Documented actual garden geometry as a platform, tree, ocean below the platform, sun/rings/dust and columns rather than treating the narrator's sea-in-the-sky language as a literal geometry specification."
+    },
+    {
+      "location": ".impeccable/config.local.json; .impeccable/build/state.json:9,74-84",
+      "note": "Context lookup reported an ignored top-level note key; the old build-phase tracker still says comps/open and review/pending. These metadata records were not repaired or used to determine the verdict. qa/review.json is the finish evidence for this scoped review."
+    },
+    {
+      "location": "tools/package.mjs:18; .impeccable/design.json",
+      "note": "The ZIP contains the previously packaged eight entries and does not include the new documentation. The corrected schemaVersion 2 design.json sidecar holds extension metadata and samples, with primitive tokens in DESIGN.md frontmatter. No package or game configuration changes were made."
+    }
+  ],
+  "verifiedCounts": {
+    "sourceManifestFiles": 18,
+    "freshUnitTests": {"passed": 18, "failed": 0, "skipped": 0, "cancelled": 0},
+    "existingRuntimeChecks": {"passed": 34, "failed": 0, "errors": 0},
+    "existingRaycastTargets": {"passed": 39, "failed": 0, "rooms": 10},
+    "storedAssertionsTotal": 91,
+    "authoredLineEntries": 69,
+    "endingRecords": 7,
+    "targetsByRoom": {"office": 4, "hub": 4, "approval": 4, "button": 3, "loop": 3, "archive": 6, "gallery": 4, "observatory": 5, "garden": 4, "quiet": 2},
+    "offline": {"externalRequests": 0, "errors": 0, "manualDefault": true, "qaDisabled": true, "normalWInput": true, "settingsPersisted": true}
+  },
+  "artifact": {
+    "path": "E:/SadmansParable/Sadman's Parable.html",
+    "bytes": 1079685,
+    "sha256": "e2b6192ca80a377c89b83a5b18d8b48392fb138b15d18d07d8de9403c8574960",
+    "freshInMemoryBuildEqual": true,
+    "distEqual": true,
+    "zipIntegrityChecked": true,
+    "zipHTMLEqual": true,
+    "sourceHashes": {
+      "src/audio.js": "162303939b62abdefeb39af73a623d32d7b6d2cf18b235c16d5e4bf905524d86",
+      "src/main.js": "a11c61b967863021fbcd68e1107b206062beec1ee0089775d10df5cf3c75ff0e",
+      "src/rules.js": "aded2da9e2d4c868fc37ab3b1cddab9e4b1779b6540e1095bc7caa1dcf0b9b14",
+      "src/story.json": "e857b3a7707b80623977d1cf90196da2bfccbb28cff99e4f9a03ece575de637b",
+      "src/style.css": "f1d1a013d5e63de72d1f93cf16d79a07240b1fad6d082b335d010729ae24a86e",
+      "src/world.js": "b8e24001b0d50ee0e6a907dc2f3a42d494bc7a4e5f251407ebff84c671bb458a"
+    }
+  },
+  "screenshotEvidence": [
+    {"path": "qa/title.png", "dimensions": [1440,900], "sha256": "a548949c553891aa1cbfb2df27f4a09f57b161b892e5788df3f2f020cb59b0d6", "scope": "Normal production title; no direct pixel review."},
+    {"path": "qa/office-first.png", "dimensions": [1440,900], "sha256": "adc7ff4f808b3c1b0930ffb215390d70500157e06e1ccb940626483ca7db14e5"},
+    {"path": "qa/archive-first.png", "dimensions": [1440,900], "sha256": "ed17b1af34e8acf17346024454596b7a3295dcdcc1a006df6810cff8606cb1d2"},
+    {"path": "qa/garden-first.png", "dimensions": [1440,900], "sha256": "28a1093768a5b509142543e0d283703fc22499a35b9cac5831d192816df16c08"},
+    {"path": "qa/mobile-first.png", "dimensions": [390,844], "sha256": "b6d9931f5244160e6d8c5a059860319ab9b50d073d4c28ec322041f7764f01dc", "scope": "Menu only; desktop game does not supply touch movement."}
+  ],
+  "limitations": [
+    "Principally code/evidence review. No direct screenshot-pixel or human appearance review; local SmolVLM2 text can misread labels and composition.",
+    "No new browser actions or captures; runtime/offline/reachability reports were reviewed and counted, not rerun in this reviewer session.",
+    "Normal production title.png was not described by the existing local visual readback, which used the older QA title-final.png.",
+    "All-ending runtime coverage uses explicit QA relocation/actions; 39 target vantages prove raycast access from collision-valid poses, not full human path traversal.",
+    "No long-duration stability, guaranteed 60 FPS, studio-quality narration, complete WCAG compliance, screen-reader gameplay, zoom suite or all-browser certification.",
+    "The degraded regex detector output [] is not a computed contrast audit.",
+    "Mobile evidence checks menu fit only; there are no touch movement controls.",
+    "Reduced camera motion removes walking bob, not all ambient world or title-camera motion.",
+    "Game source, tests, launchers, bundles and previous QA artifacts were left unchanged; the existing ZIP does not include these new documents."
+  ],
+  "documentationFormat": {
+    "reference": "impeccable/reference/document.md",
+    "frontmatter": "Normative CSS and world colors, observed typography, spacing and component primitives only.",
+    "sectionOrder": ["Overview", "Colors", "Typography", "Layout", "Elevation & Depth", "Shapes", "Components", "Do's and Don'ts"],
+    "sidecar": ".impeccable/design.json",
+    "sidecarSchemaVersion": 2,
+    "sidecarPrimitivesDuplicated": false,
+    "assignedWorld": ".impeccable/surface.md:4,8-12 — analog planetarium",
+    "newBranding": false
+  },
+  "documents": [
+    "E:/SadmansParable/DESIGN.md",
+    "E:/SadmansParable/.impeccable/design.json",
+    "E:/SadmansParable/qa/review.json"
+  ]
+}
