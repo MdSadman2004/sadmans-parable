@@ -1,0 +1,34 @@
+[
+  {
+    "label": "fresh public clone (file://)",
+    "url": "file:///D:/Temp/sp-clone/Sadman's%20Parable.html",
+    "booted": true,
+    "title": "Sadman's Parable",
+    "state": "menu",
+    "room": "office",
+    "draws": 99,
+    "triangles": 12626,
+    "errors": 0,
+    "caption": "",
+    "begin": "Begin",
+    "qaExposed": false,
+    "hasScreens": true,
+    "externalRequests": 0
+  },
+  {
+    "label": "GitHub Pages",
+    "url": "https://mdsadman2004.github.io/sadmans-parable/",
+    "booted": true,
+    "title": "Sadman's Parable",
+    "state": "menu",
+    "room": "office",
+    "draws": 99,
+    "triangles": 12626,
+    "errors": 0,
+    "caption": "",
+    "begin": "Begin",
+    "qaExposed": false,
+    "hasScreens": true,
+    "externalRequests": 0
+  }
+]
